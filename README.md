@@ -22,3 +22,4 @@ Report-Tools:
   M.S. Office
   LaTex (TexStudio)
 
+[endoffile]
