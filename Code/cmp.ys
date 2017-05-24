@@ -1,0 +1,8 @@
+read_verilog module/top.v
+hierarchy -check -top top
+proc; opt; memory; fsm; opt
+techmap; opt
+dfflibmap -liberty lib/cmos_cells.lib
+abc -liberty lib/cmos_cells.lib
+opt
+write_verilog -norename -noattr cmp.v
