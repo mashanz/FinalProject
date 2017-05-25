@@ -10,8 +10,33 @@ module top(a, b, c);
   wire \$abc$176$n20_1 ;
   wire \$abc$176$n21_1 ;
   wire \$abc$176$n22_1 ;
+  wire \$abc$176$n23_1 ;
+  wire \$abc$176$n24_1 ;
   wire \$abc$176$n25_1 ;
+  wire \$abc$176$n26_1 ;
+  wire \$abc$176$n27_1 ;
   wire \$abc$176$n28 ;
+  wire \$abc$176$n29 ;
+  wire \$abc$176$n30 ;
+  wire \$abc$176$n31 ;
+  wire \$abc$176$n32 ;
+  wire \$abc$176$n33 ;
+  wire \$abc$176$n34 ;
+  wire \$abc$176$n35 ;
+  wire \$abc$176$n36 ;
+  wire \$abc$176$n38 ;
+  wire \$abc$176$n40 ;
+  wire \$abc$176$n41 ;
+  wire \$abc$176$n42 ;
+  wire \$abc$176$n43 ;
+  wire \$abc$176$n45 ;
+  wire \$abc$176$n46 ;
+  wire \$abc$176$n47 ;
+  wire \$abc$176$n48 ;
+  wire \$abc$176$n50 ;
+  wire \$abc$176$n51 ;
+  wire \$abc$176$n52 ;
+  wire \$abc$176$n53 ;
   input [3:0] a;
   input [3:0] b;
   output [7:0] c;
@@ -20,82 +45,195 @@ module top(a, b, c);
     .B(a[3]),
     .Y(\$abc$176$n14_1 )
   );
-  AND \$abc$176$auto$blifparse.cc:286:parse_blif$178  (
-    .A(b[2]),
-    .B(a[2]),
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$178  (
+    .A(a[2]),
     .Y(\$abc$176$n15 )
   );
-  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$179  (
-    .A(b[1]),
-    .B(a[1]),
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$179  (
+    .A(b[2]),
     .Y(\$abc$176$n16_1 )
   );
-  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$180  (
-    .A(b[0]),
-    .B(a[0]),
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$180  (
+    .A(\$abc$176$n16_1 ),
+    .B(\$abc$176$n15 ),
     .Y(\$abc$176$n17_1 )
   );
-  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$181  (
-    .A(b[1]),
-    .B(a[1]),
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$181  (
+    .A(\$abc$176$n17_1 ),
     .Y(\$abc$176$n18_1 )
   );
-  OAI21 \$abc$176$auto$blifparse.cc:286:parse_blif$182  (
-    .A(\$abc$176$n18_1 ),
-    .B(\$abc$176$n17_1 ),
-    .C(\$abc$176$n16_1 ),
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$182  (
+    .A(b[1]),
+    .B(a[1]),
     .Y(\$abc$176$n19_1 )
   );
-  XOR \$abc$176$auto$blifparse.cc:286:parse_blif$183  (
-    .A(b[2]),
-    .B(a[2]),
-    .Y(\$abc$176$n20_1 )
-  );
-  AOI21 \$abc$176$auto$blifparse.cc:286:parse_blif$184  (
-    .A(\$abc$176$n20_1 ),
-    .B(\$abc$176$n19_1 ),
-    .C(\$abc$176$n15 ),
-    .Y(\$abc$176$n21_1 )
-  );
-  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$185  (
-    .A(b[3]),
-    .B(a[3]),
-    .Y(\$abc$176$n22_1 )
-  );
-  OAI21 \$abc$176$auto$blifparse.cc:286:parse_blif$186  (
-    .A(\$abc$176$n22_1 ),
-    .B(\$abc$176$n21_1 ),
-    .C(\$abc$176$n14_1 ),
-    .Y(c[4])
-  );
-  XOR \$abc$176$auto$blifparse.cc:286:parse_blif$187  (
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$183  (
     .A(b[0]),
     .B(a[0]),
-    .Y(c[0])
+    .Y(\$abc$176$n20_1 )
   );
-  XOR \$abc$176$auto$blifparse.cc:286:parse_blif$188  (
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$184  (
+    .A(\$abc$176$n20_1 ),
+    .Y(\$abc$176$n21_1 )
+  );
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$185  (
+    .A(a[1]),
+    .Y(\$abc$176$n22_1 )
+  );
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$186  (
+    .A(b[1]),
+    .Y(\$abc$176$n23_1 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$187  (
+    .A(\$abc$176$n23_1 ),
+    .B(\$abc$176$n22_1 ),
+    .Y(\$abc$176$n24_1 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$188  (
     .A(b[1]),
     .B(a[1]),
     .Y(\$abc$176$n25_1 )
   );
-  XNOR \$abc$176$auto$blifparse.cc:286:parse_blif$189  (
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$189  (
     .A(\$abc$176$n25_1 ),
-    .B(\$abc$176$n17_1 ),
-    .Y(c[1])
+    .B(\$abc$176$n24_1 ),
+    .Y(\$abc$176$n26_1 )
   );
-  XOR \$abc$176$auto$blifparse.cc:286:parse_blif$190  (
-    .A(\$abc$176$n20_1 ),
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$190  (
+    .A(\$abc$176$n26_1 ),
+    .B(\$abc$176$n21_1 ),
+    .Y(\$abc$176$n27_1 )
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$191  (
+    .A(\$abc$176$n27_1 ),
     .B(\$abc$176$n19_1 ),
-    .Y(c[2])
-  );
-  XOR \$abc$176$auto$blifparse.cc:286:parse_blif$191  (
-    .A(b[3]),
-    .B(a[3]),
     .Y(\$abc$176$n28 )
   );
-  XNOR \$abc$176$auto$blifparse.cc:286:parse_blif$192  (
-    .A(\$abc$176$n28 ),
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$192  (
+    .A(b[2]),
+    .B(a[2]),
+    .Y(\$abc$176$n29 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$193  (
+    .A(\$abc$176$n29 ),
+    .B(\$abc$176$n17_1 ),
+    .Y(\$abc$176$n30 )
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$194  (
+    .A(\$abc$176$n30 ),
+    .B(\$abc$176$n28 ),
+    .Y(\$abc$176$n31 )
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$195  (
+    .A(\$abc$176$n31 ),
+    .B(\$abc$176$n18_1 ),
+    .Y(\$abc$176$n32 )
+  );
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$196  (
+    .A(\$abc$176$n14_1 ),
+    .Y(\$abc$176$n33 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$197  (
+    .A(b[3]),
+    .B(a[3]),
+    .Y(\$abc$176$n34 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$198  (
+    .A(\$abc$176$n34 ),
+    .B(\$abc$176$n33 ),
+    .Y(\$abc$176$n35 )
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$199  (
+    .A(\$abc$176$n35 ),
+    .B(\$abc$176$n32 ),
+    .Y(\$abc$176$n36 )
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$200  (
+    .A(\$abc$176$n36 ),
+    .B(\$abc$176$n14_1 ),
+    .Y(c[4])
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$201  (
+    .A(b[0]),
+    .B(a[0]),
+    .Y(\$abc$176$n38 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$202  (
+    .A(\$abc$176$n38 ),
     .B(\$abc$176$n21_1 ),
+    .Y(c[0])
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$203  (
+    .A(\$abc$176$n23_1 ),
+    .B(\$abc$176$n22_1 ),
+    .Y(\$abc$176$n40 )
+  );
+  NAND \$abc$176$auto$blifparse.cc:286:parse_blif$204  (
+    .A(\$abc$176$n40 ),
+    .B(\$abc$176$n19_1 ),
+    .Y(\$abc$176$n41 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$205  (
+    .A(\$abc$176$n41 ),
+    .B(\$abc$176$n20_1 ),
+    .Y(\$abc$176$n42 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$206  (
+    .A(\$abc$176$n26_1 ),
+    .B(\$abc$176$n21_1 ),
+    .Y(\$abc$176$n43 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$207  (
+    .A(\$abc$176$n43 ),
+    .B(\$abc$176$n42 ),
+    .Y(c[1])
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$208  (
+    .A(\$abc$176$n42 ),
+    .B(\$abc$176$n24_1 ),
+    .Y(\$abc$176$n45 )
+  );
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$209  (
+    .A(\$abc$176$n30 ),
+    .Y(\$abc$176$n46 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$210  (
+    .A(\$abc$176$n46 ),
+    .B(\$abc$176$n45 ),
+    .Y(\$abc$176$n47 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$211  (
+    .A(\$abc$176$n30 ),
+    .B(\$abc$176$n28 ),
+    .Y(\$abc$176$n48 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$212  (
+    .A(\$abc$176$n48 ),
+    .B(\$abc$176$n47 ),
+    .Y(c[2])
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$213  (
+    .A(\$abc$176$n47 ),
+    .B(\$abc$176$n17_1 ),
+    .Y(\$abc$176$n50 )
+  );
+  NOT \$abc$176$auto$blifparse.cc:286:parse_blif$214  (
+    .A(\$abc$176$n35 ),
+    .Y(\$abc$176$n51 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$215  (
+    .A(\$abc$176$n51 ),
+    .B(\$abc$176$n50 ),
+    .Y(\$abc$176$n52 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$216  (
+    .A(\$abc$176$n35 ),
+    .B(\$abc$176$n32 ),
+    .Y(\$abc$176$n53 )
+  );
+  NOR \$abc$176$auto$blifparse.cc:286:parse_blif$217  (
+    .A(\$abc$176$n53 ),
+    .B(\$abc$176$n52 ),
     .Y(c[3])
   );
   assign c[7:5] = 3'b000;

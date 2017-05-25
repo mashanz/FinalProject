@@ -14,7 +14,7 @@ top  	= "top" # Ganti sesuai nama module yang akan di kompile
 dir  	= "module/"
 file 	= "cmp.ys"
 target  = "top.v"
-liberty = "lib/cmos_cells.lib"
+liberty = "lib/simple.lib"
 compiled= "cmp.v"
 def read():
 	x=0
