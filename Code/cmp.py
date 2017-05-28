@@ -6,14 +6,14 @@ import os
 #######################################################################
 #                          MODULE UTAMA
 #######################################################################
-top  	= "top" # Ganti sesuai nama module yang akan di kompile
+top  	= "alu_8bit" # Ganti sesuai nama module yang akan di kompile
 
 #######################################################################
 #                    	MAIN PROSES (JANGAN GANTI)
 #######################################################################
 dir  	= "module/"
 file 	= "cmp.ys"
-target  = "top.v"
+target  = "alu_8bit.v"
 liberty = "lib/simple.lib"
 compiled= "cmp.v"
 def read():
