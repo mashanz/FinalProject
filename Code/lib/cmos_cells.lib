@@ -1,4 +1,4 @@
-library(demo) {
+library(complex) {
   cell(NOT) {
     area: 3;
     pin(A) { direction: input; }
@@ -39,7 +39,7 @@ library(demo) {
     pin(B) { direction: input; }
     pin(Y) { direction: output;
              function: "A^B"; }
-  }	  
+  }
   cell(XNOR) {
     area: 8;
     pin(A) { direction: input; }
@@ -151,7 +151,7 @@ library(demo) {
              function: "(((A+B)*(C+D))')"; }
   }
   cell (MUX21) {
-    area : 6; 
+    area : 6;
     pin(A)  { direction : input; }
     pin(B)  { direction : input; }
     pin(S)  { direction : input; }
