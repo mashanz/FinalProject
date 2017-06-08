@@ -6,14 +6,14 @@ import os
 #######################################################################
 #                          MODULE UTAMA
 #######################################################################
-top  	= "alu_8bit" # Ganti sesuai nama module yang akan di kompile
+top  	= "protection" # Ganti sesuai nama module yang akan di kompile
 
 #######################################################################
 #                    	MAIN PROSES (JANGAN GANTI)
 #######################################################################
 dir  	= "module/"
 file 	= "cmp.ys"
-target  = "alu_8bit.v"
+target  = "protection.v"
 liberty = "lib/simple.lib"
 compiled= "cmp.v"
 def read():
@@ -34,6 +34,7 @@ def read():
 	out.write("abc -liberty "+liberty+"\n")
 	out.write("opt\n")
 	out.write("write_verilog -norename -noattr "+compiled+"\n")
+	out.write("dffsr2dff\n")
 	out.close()
 	os.system("yosys " + file)
 if __name__ == "__main__":

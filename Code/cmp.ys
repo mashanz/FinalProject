@@ -1,8 +1,9 @@
-read_verilog module/alu_8bit.v
-hierarchy -check -top alu_8bit
+read_verilog module/protection.v
+hierarchy -check -top protection
 proc; opt; memory; fsm; opt
 techmap; opt
 dfflibmap -liberty lib/simple.lib
 abc -liberty lib/simple.lib
 opt
 write_verilog -norename -noattr cmp.v
+dffsr2dff

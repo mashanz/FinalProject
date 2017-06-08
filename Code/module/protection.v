@@ -1,5 +1,3 @@
-
-
 module protection( RST, CLK, ENA, RGA, RGB, RGZ, KEY);
 	input RST, CLK, ENA;
 	input [7:0]RGA;
