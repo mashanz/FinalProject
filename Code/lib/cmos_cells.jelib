@@ -1,5 +1,5 @@
 # header information:
-HCMOScells|8.11|USER_electrical_units()I70480
+Hcmos_cells|9.07|USER_electrical_units()I70480
 
 # Views:
 Vicon|ic
@@ -120,10 +120,10 @@ X
 
 # Cell bitlinepullups;1{ic}
 Cbitlinepullups;1{ic}||artwork|1003212358000|1003212434000|E
-NOpened-Polygon|art@0||-1|8|2||RR||trace()V[1/0,-1/0]
-NOpened-Polygon|art@1||-1|6|2||RR||trace()V[1/0,-1/0]
-NOpened-Polygon|art@2||-1|4|2||RR||trace()V[1/0,-1/0]
-NOpened-Polygon|art@3||-1|2|2||RR||trace()V[1/0,-1/0]
+NOpened-Polygon|art@0||-1|8|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@1||-1|6|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@2||-1|4|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@3||-1|2|2||||trace()V[-1/0,1/0]
 Nschematic:Bbox|node@0||3|5|-4||||SCHEM_function(D5G1;)Swpmosdriver
 Ngeneric:Invisible-Pin|pin@0||-2|8|||RR|
 Ngeneric:Invisible-Pin|pin@1||-2|6|||RR|
@@ -296,10 +296,10 @@ X
 
 # Cell dec;1{ic}
 Cdec;1{ic}||artwork|1010537402000|1010776917000|E
-NOpened-Polygon|art@0||3|0|2||RRR||trace()V[1/0,-1/0]
-NOpened-Polygon|art@1||5|0|2||RRR||trace()V[1/0,-1/0]
-NOpened-Polygon|art@2||7|0|2||RRR||trace()V[1/0,-1/0]
-NOpened-Polygon|art@3||9|0|2||RRR||trace()V[1/0,-1/0]
+NOpened-Polygon|art@0||3|0||2|||trace()V[0/-1,0/1]
+NOpened-Polygon|art@1||5|0||2|||trace()V[0/-1,0/1]
+NOpened-Polygon|art@2||7|0||2|||trace()V[0/-1,0/1]
+NOpened-Polygon|art@3||9|0||2|||trace()V[0/-1,0/1]
 NOpened-Polygon|art@4||-1|2|2||||trace()V[-1/0,1/0]
 NOpened-Polygon|art@5||-1|4|2||||trace()V[-1/0,1/0]
 NOpened-Polygon|art@6||-1|6|2||||trace()V[-1/0,1/0]
@@ -1039,12 +1039,12 @@ X
 
 # Cell dualsram;1{ic}
 Cdualsram;1{ic}||artwork|1003211918000|1243098246453|E
-NOpened-Polygon|art@0||-1|8||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@1||-1|6||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@2||-1|4||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@3||-1|2||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@4||2|11|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@5||5|11|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@0||-1|8|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@1||-1|6|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@2||-1|4|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@3||-1|2|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@4||2|11||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@5||5|11||2|||trace()V[0/1,0/-1]
 Nschematic:Bbox|node@0||4|5|-2||||SCHEM_function(D5G1;)Sdualsram
 Ngeneric:Invisible-Pin|pin@0||-2|8|||R|
 Ngeneric:Invisible-Pin|pin@1||-2|6|||R|
@@ -1375,12 +1375,12 @@ X
 
 # Cell dualsrambit0;1{ic}
 Cdualsrambit0;1{ic}||artwork|1010620038000|1010620144000|E
-NOpened-Polygon|art@0||5|11|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@1||2|11|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@2||-1|2||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@3||-1|4||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@4||-1|6||2|R||trace()V[0/1,0/-1]
-NOpened-Polygon|art@5||-1|8||2|R||trace()V[0/1,0/-1]
+NOpened-Polygon|art@0||5|11||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@1||2|11||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@2||-1|2|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@3||-1|4|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@4||-1|6|2||||trace()V[-1/0,1/0]
+NOpened-Polygon|art@5||-1|8|2||||trace()V[-1/0,1/0]
 Nschematic:Bbox|node@0||4|5|-2||||SCHEM_function(D5G1;)Sdualsrambit0
 Ngeneric:Invisible-Pin|pin@0||5|12|||RRR|
 Ngeneric:Invisible-Pin|pin@1||2|12|||RRR|
@@ -1627,9 +1627,9 @@ X
 Cflop;1{ic}||artwork|977251494000|977435579000|E
 NOpened-Polygon|art@0||6.5|5|1||||trace()V[0.5/0,-0.5/0]
 NOpened-Polygon|art@1||0.5|5|1||||trace()V[-0.5/0,0.5/0]
-NOpened-Polygon|art@2||2|9|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@2||2|9||2|||trace()V[0/1,0/-1]
 NOpened-Polygon|art@3||3|9.5||1|||trace()V[0/0.5,0/-0.5]
-NOpened-Polygon|art@4||4|9|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@4||4|9||2|||trace()V[0/1,0/-1]
 NOpened-Polygon|art@5||5|9.5||1|||trace()V[0/0.5,0/-0.5]
 NCircle|art@6||3|8.5|1|1||
 NCircle|art@7||5|8.5|1|1||
@@ -2975,21 +2975,21 @@ X
 Cramslice;1{ic}||artwork|1010688772000|1010689187000|E
 NOpened-Polygon|art@0||29|10|2||||trace()V[1/0,-1/0]
 NOpened-Polygon|art@1||29|7.5|2||||trace()V[1/0,-1/0]
-NOpened-Polygon|art@2||25.5|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@3||22.5|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@4||16|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@5||19|12.5|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@2||25.5|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@3||22.5|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@4||16|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@5||19|12.5||2|||trace()V[0/1,0/-1]
 NOpened-Polygon|art@6||-17|9|2||||trace()V[-1/0,1/0]
-NOpened-Polygon|art@7||-3|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@8||2|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@9||7|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@10||12|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@11||-5.5|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@12||-0.5|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@13||4.5|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@14||9.5|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@15||-14|12.5|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@16||-9.5|12.5|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@7||-3|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@8||2|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@9||7|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@10||12|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@11||-5.5|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@12||-0.5|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@13||4.5|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@14||9.5|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@15||-14|12.5||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@16||-9.5|12.5||2|||trace()V[0/1,0/-1]
 Nschematic:Bbox|node@0||6|8.5|34|-4|||SCHEM_function(D5G1;)Sramslice
 Ngeneric:Invisible-Pin|pin@0||30|10||||
 Ngeneric:Invisible-Pin|pin@1||30|7.5||||
@@ -3236,10 +3236,10 @@ NOpened-Polygon|art@2||-3|7|2||||trace()V[-1/0,1/0]
 NOpened-Polygon|art@3||-3|5|2||||trace()V[-1/0,1/0]
 NOpened-Polygon|art@4||9|10|2||||trace()V[1/0,-1/0]
 NOpened-Polygon|art@5||9|6|2||||trace()V[1/0,-1/0]
-NOpened-Polygon|art@6||6|14|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@7||4|14|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@8||2|14|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@9||0|14|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@6||6|14||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@7||4|14||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@8||2|14||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@9||0|14||2|||trace()V[0/1,0/-1]
 Nschematic:Bbox|node@0||3|8|||||SCHEM_function(D5G1;)Sreaddriver
 Ngeneric:Invisible-Pin|pin@0||-4|11||||
 Ngeneric:Invisible-Pin|pin@1||-4|9||||
@@ -3849,7 +3849,7 @@ X
 # Cell std_latch;1{ic}
 Cstd_latch;1{ic}||artwork|977188259000|1041984264000|E|prototype_center()I[0,8000]
 Ngeneric:Facet-Center|art@0||0|0||||AV
-NOpened-Polygon|art@1||2|7|2||R||trace()V[-1/0,1/0]
+NOpened-Polygon|art@1||2|7||2|||trace()V[0/-1,0/1]
 NBox|art@2||2|3|4|6||
 NOpened-Polygon|art@3||5|3|2||||trace()V[1/0,-1/0]
 NOpened-Polygon|art@4||-1|3|2||||trace()V[-1/0,1/0]
@@ -4636,7 +4636,7 @@ X
 # Cell tri;1{ic}
 Ctri;1{ic}||artwork|977189626000|1242687992484|E
 NOpened-Polygon|art@0||0|5|2||||trace()V[-1/0,1/0]
-NOpened-Polygon|art@1||3|7|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@1||3|7||2|||trace()V[0/1,0/-1]
 NTriangle|art@2||3|5|4|4|RRR|
 NCircle|art@3||5.5|5|1|1||
 NOpened-Polygon|art@4||3|2.5||1|||trace()V[0/-0.5,0/0.5]
@@ -4766,8 +4766,8 @@ NOpened-Polygon|art@1||8|6|2||||trace()V[1/0,-1/0]
 NOpened-Polygon|art@2||8|4|2||||trace()V[1/0,-1/0]
 NOpened-Polygon|art@3||8|2|2||||trace()V[1/0,-1/0]
 NOpened-Polygon|art@4||-2|4.75|2||||trace()V[-1/0,1/0]
-NOpened-Polygon|art@5||1|11|2||RRR||trace()V[-1/0,1/0]
-NOpened-Polygon|art@6||5|11|2||RRR||trace()V[-1/0,1/0]
+NOpened-Polygon|art@5||1|11||2|||trace()V[0/1,0/-1]
+NOpened-Polygon|art@6||5|11||2|||trace()V[0/1,0/-1]
 Nschematic:Bbox|node@0||3|5|-2||||SCHEM_function(D5G1;)Swritedriver
 Ngeneric:Invisible-Pin|pin@0||9|8||||
 Ngeneric:Invisible-Pin|pin@1||9|6||||
@@ -4977,94 +4977,4 @@ Ebit1_b||D5G1.5;X-2;|conn@2|y|O
 Ewd_1|wd|D5G1.5;X-2.5;|conn@0|y|I
 Ewriteeven||D5G1.5;|conn@5|a|I
 Ewriteodd||D5G1.5;X-3.5;|conn@6|y|I
-X
-
-# Cell NOT;1{ic}
-CNOT;1{ic}||artwork|1489383680343|1489383737910|E
-Ngeneric:Facet-Center|art@0||0|0||||AV
-NTriangle|art@2||0|0|6|6|RRR|
-Nschematic:Bus_Pin|pin@0||-6|0||||
-Nschematic:Wire_Pin|pin@1||-3.5|0||||
-Nschematic:Bus_Pin|pin@2||5|0||||
-Nschematic:Wire_Pin|pin@3||4|0||||
-Nschematic:Wire_Pin|pin@4||-3|0||||
-Nschematic:Wire_Pin|pin@5||3|0||||
-Aschematic:wire|net@0|||0|pin@1||-3.5|0|pin@0||-6|0
-Aschematic:wire|net@1|||1800|pin@3||4|0|pin@2||5|0
-Aschematic:wire|net@2|||1800|pin@1||-3.5|0|pin@4||-3|0
-Aschematic:wire|net@3|||0|pin@3||4|0|pin@5||3|0
-EA||D5G2;|pin@0||U
-EY||D5G2;|pin@2||U
-X
-
-# Cell NOT;1{lay}
-CNOT;1{lay}||mocmos|1489381279812|1489628424623||DRC_last_good_drc_area_date()G1489460244073|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1489984806312
-Ngeneric:Facet-Center|art@0||0|0||||AV
-NMetal-1-N-Active-Con|contact@0||-44|-31.5||||
-NMetal-1-P-Active-Con|contact@1||-44|40.5||||
-NMetal-1-N-Active-Con|contact@2||-33|-31.5||||
-NMetal-1-P-Active-Con|contact@3||-33|40.5||||
-NMetal-1-Polysilicon-1-Con|contact@4||-42|-0.5||||
-NMetal-1-Metal-2-Con|contact@5||-42|-0.5||||
-NMetal-1-Metal-2-Con|contact@6||-33|-0.5||||
-NN-Transistor|nmos@0||-38.5|-31.5|1||R|
-NMetal-1-Pin|pin@2||-44|49.5||||
-NMetal-1-Pin|pin@3||-33|-0.5||||
-NPolysilicon-1-Pin|pin@4||-38.5|-0.5||||
-NP-Well-Node|plnode@0||-38.5|-23|24|46||A
-NN-Well-Node|plnode@1||-38.5|28|24|56||A
-NP-Transistor|pmos@0||-38.5|40.5|1||R|
-NMetal-1-P-Well-Con|substr@0||-44|-40.5||||
-NMetal-1-P-Well-Con|substr@1||-35|-40.5||||
-NMetal-1-N-Well-Con|well@0||-44|49.5||||
-NMetal-1-N-Well-Con|well@1||-35|49.5||||
-AN-Active|net@1|||S0|contact@2||-33.5|-31.86|nmos@0|diff-bottom|-34.75|-31.86
-AMetal-1|net@2||1|S2700|substr@0||-44|-40.5|contact@0||-44|-31.5
-AP-Active|net@3|||S1800|contact@1||-43.5|40.6|pmos@0|diff-top|-42.25|40.6
-AP-Active|net@4|||S0|contact@3||-33.5|40.6|pmos@0|diff-bottom|-34.75|40.6
-AMetal-1|net@6||1|S900|contact@5||-42.5|-0.5|contact@4||-42.5|-0.5
-AN-Active|net@8|||S900|contact@2||-33|-31|contact@2||-33|-31.5
-APolysilicon-1|net@9|||S900|pmos@0|poly-left|-38.5|36.5|pin@4||-38.5|-0.5
-APolysilicon-1|net@10|||S900|pin@4||-38.5|-0.5|nmos@0|poly-right|-38.5|-27.5
-APolysilicon-1|net@11|||S1800|contact@4||-41.5|-0.5|pin@4||-38.5|-0.5
-AMetal-1|net@12||1|S2700|contact@1||-44|40.5|well@0||-44|49.5
-AMetal-1|net@13||1|S0|well@0||-43.5|49.5|pin@2||-44|49.5
-AMetal-1|net@14||1|S900|contact@3||-33|40.6|pin@3||-33|-0.5
-AMetal-1|net@15||1|S2700|contact@2||-33|-31.5|contact@6||-33|-0.5
-AN-Active|net@16|||S1800|contact@0||-43.5|-31.5|nmos@0|diff-top|-42.25|-31.5
-AMetal-1|net@19||4|S1800|well@0||-44|49.5|well@1||-35|49.5
-AMetal-1|net@20||4|S1800|substr@0||-44|-40.5|substr@1||-35|-40.5
-AMetal-1|net@21|||S2700|contact@6||-33|-0.5|pin@3||-33|-0.5
-EA||D5G2;|contact@5||U
-Egnd|Gnd|D5G2;|substr@0||U
-Evdd|Vdd|D5G2;|well@0||U
-EY||D5G2;|contact@6||U
-X
-
-# Cell NOT;1{sch}
-CNOT;1{sch}||schematic|1489381272296|1489383680344|
-INOT;1{ic}|NOT@0||-1.5|14.5|||D5G4;
-Ngeneric:Facet-Center|art@0||0|0||||AV
-NOff-Page|conn@0||-24|0.5||||
-NOff-Page|conn@1||-8|0.5||||
-NGround|gnd@0||-14.5|-7.5||||
-NTransistor|nmos@0||-16.5|-2.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S5
-NWire_Pin|pin@0||-18.5|3.5||||
-NWire_Pin|pin@1||-18.5|-2.5||||
-NWire_Pin|pin@6||-18.5|0.5||||
-NWire_Pin|pin@7||-14.5|0.5||||
-NTransistor|pmos@0||-16.5|3.5|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S5
-NPower|pwr@0||-14.5|8||||
-Awire|net@0|||0|pmos@0|g|-17.5|3.5|pin@0||-18.5|3.5
-Awire|net@3|||1800|pin@1||-18.5|-2.5|nmos@0|g|-17.5|-2.5
-Awire|net@4|||2700|gnd@0||-14.5|-5.5|nmos@0|s|-14.5|-4.5
-Awire|net@5|||900|pwr@0||-14.5|8|pmos@0|d|-14.5|5.5
-Awire|net@11|||2700|pin@1||-18.5|-2.5|pin@6||-18.5|0.5
-Awire|net@12|||2700|pin@6||-18.5|0.5|pin@0||-18.5|3.5
-Awire|net@13|||0|pin@6||-18.5|0.5|conn@0|y|-22|0.5
-Awire|net@15|||900|pmos@0|s|-14.5|1.5|pin@7||-14.5|0.5
-Awire|net@16|||900|pin@7||-14.5|0.5|nmos@0|d|-14.5|-0.5
-Awire|net@17|||1800|pin@7||-14.5|0.5|conn@1|a|-10|0.5
-EA||D5G2;|conn@0|a|U
-EY||D5G2;|conn@1|y|U
 X
