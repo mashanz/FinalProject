@@ -2,6 +2,7 @@
 \usepackage{blindtext}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage[table,xcdraw]{xcolor}
 
 \ifCLASSOPTIONcompsoc
 	\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
@@ -88,7 +89,7 @@ VLSI, Intellectual Property Protection, Digital Signal Processing, Polygate Wate
 	\label{sec:introduction}
 \fi
 
-\IEEEPARstart{P}{roviding} a series of watermarks as a safeguard to a printed VLSI blueprint that indicates ownership of the designer or module manufacturer will protect against cheating others who will steal the design. So the possibility of theft or plagiarism that causes losses to the company or designer because of its design is stolen or plagiarism reduced.\cite{IEEEhowto:kopka1}
+\IEEEPARstart{P}{roviding} a series of watermarks as a safeguard to a printed VLSI blueprint that indicates ownership of the designer or module manufacturer will protect against cheating others who will steal the design. So the possibility of theft or plagiarism that causes losses to the company or designer because of its design is stolen or plagiarism reduced.\cite{IEEEhowto:kopka}
 
 %\hfill mds
  
@@ -107,7 +108,7 @@ Providing a series of watermarks as a safeguard to a printed VLSI blueprint that
 	\label{fig_sim}
 \end{figure}
 
-The design will be designed with a combination of Low Pass Filter, High Pass Filter, Band Pass Filter, and Band Reject Filter. This combination will be determined and enabled by polygate as a key to activating a combination of digital filters. After the digital filter is active then the data combination will pass through a combination of filters enabled from the polygate combination.[8], [9] Then the result data combination of these processes will form a special pattern that becomes the watermark data of the designer that characterizes the identity of the designer. Once given the watermark then the module will be tested again its performance. If there is a decrease in performance it will be improved algorithm and then re-tested its performance. Until obtained the best performance of some trials to be performed.
+The design will be designed with a combination of Low Pass Filter, High Pass Filter, Band Pass Filter, and Band Reject Filter. This combination will be determined and enabled by polygate as a key to activating a combination of digital filters. After the digital filter is active then the data combination will pass through a combination of filters enabled from the polygate combination.[8], [9] Then the result data combination of these processes will form a special pattern that becomes the watermark data of the designer that characterizes the identity of the designer. Once given the watermark then the module will be tested again its performance. If there is a decrease in performance it should be re-improved the algorithm and then re-tested its performance until obtained the best performance.
 
 \subsection{Polymorph}
 \begin{figure}[h]
@@ -132,6 +133,39 @@ To extract signature from injected data it will counting how many data will be s
 
 \subsection{Data I/O}
 Data in data out is example how filter is going in and let the verification data through system generated and will procced so data will change to specific bit array. By injected long bit stream data to IC with purpose to deceive the attacker. And the output is just specific short bit stream data. The purpose given long input and short output is to avoid watermarks is detected by forced data injection. And here is example with streaming bit data with clipping on the 5/1 injection data. With 20 data stream and 4 data output as zero is ignored. Inputted data will be procced with given algorithm before to extract signature data.
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[h]
+	\centering
+	\caption{Data time verification 20 to 4 clock}
+	\label{my-label}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{EFEFEF}}c |c|c|c|lllll}
+		\cline{1-4} \cline{6-9}
+		\cellcolor[HTML]{C0C0C0}Time & \cellcolor[HTML]{C0C0C0}in 0 & \cellcolor[HTML]{C0C0C0}in 1 & \cellcolor[HTML]{C0C0C0}in 2 & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Time} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}out 0} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}out 1} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}out 2} \\ \cline{1-4} \cline{6-9} 
+		0                            & 1                            & 1                            & 1                            & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}0}    & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{0}                             \\ \cline{1-4} \cline{6-9} 
+		1                            & 1                            & 0                            & 1                            & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}1}    & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{1}                             & \multicolumn{1}{c|}{0}                             \\ \cline{1-4} \cline{6-9} 
+		2                            & 1                            & 1                            & 0                            & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}2}    & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{0}                             \\ \cline{1-4} \cline{6-9} 
+		3                            & 0                            & 1                            & 0                            & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}3}    & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{1}                             \\ \cline{1-4} \cline{6-9} 
+		4                            & 0                            & 1                            & 1                            & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}4}    & \multicolumn{1}{c|}{0}                             & \multicolumn{1}{c|}{1}                             & \multicolumn{1}{c|}{1}                             \\ \cline{1-4} \cline{6-9} 
+		5                            & 1                            & 0                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		6                            & 0                            & 1                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		7                            & 0                            & 0                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		8                            & 1                            & 1                            & 1                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		9                            & 1                            & 0                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		10                           & 0                            & 1                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		11                           & 0                            & 0                            & 1                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		12                           & 0                            & 1                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		13                           & 1                            & 0                            & 1                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		14                           & 0                            & 1                            & 1                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		15                           & 1                            & 0                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		16                           & 0                            & 1                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		17                           & 1                            & 1                            & 1                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		18                           & 0                            & 1                            & 1                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+		19                           & 0                            & 0                            & 0                            &                       &                                                   &                                                    &                                                    &                                                    \\ \cline{1-4}
+	\end{tabular}
+\end{table}
+}
+
 
 \subsection{Layouting}
 Gate for layout use CMOS technology. The protection use simple basic CMOS gate for mixed implemented for hard removal from reverse engineering, there are:
@@ -184,15 +218,116 @@ Mixed Random Gate Placement is randomize Verification’s components with main I
 
 The dark dot representation of NAND, NOR and INVERTER from verification components. So for hard removal watermark it will change entire design and it will harder to detect watermark from random placement.
 
-\section{Conclusion}
-\blindtext[3]
-\begin{figure*}[!h]
+\section{Analysis}
+In this section, analysis is focution on how watermark actualy didn't create error to original design
+so watermark will be usefull to protect original design from thiefing.
+
+\subsection{Watermark softwere simulation}
+This is simulation from data given before. Data from device to read and inject data is translated as alphabetic character from 3 bits data stream. It is show long data stream with short data output as signature.
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[h]
 	\centering
-	\includegraphics[scale=1.7]{images/gate1}
-	\caption{Simulation results for the network.}
-	\label{fig_sim}
-\end{figure*}
-\blindtext[2]
+	\caption{Input Array}
+	\label{inputarray}
+	\begin{tabular}{|c|c|}
+		\hline
+		H                            & 111                                      \\ \hline
+		F                            & 101                                      \\ \hline
+		G                            & 110                                      \\ \hline
+		C                            & 010                                      \\ \hline
+		D                            & 011                                      \\ \hline
+		E                            & 100                                      \\ \hline
+		C                            & 010                                      \\ \hline
+		A                            & 000                                      \\ \hline
+		H                            & 111                                      \\ \hline
+		E                            & 100                                      \\ \hline
+		C                            & 010                                      \\ \hline
+		B                            & 001                                      \\ \hline
+		C                            & 010                                      \\ \hline
+		F                            & 101                                      \\ \hline
+		D                            & 011                                      \\ \hline
+		E                            & 100                                      \\ \hline
+		C                            & 010                                      \\ \hline
+		H                            & 111                                      \\ \hline
+		D                            & 011                                      \\ \hline
+		\multicolumn{1}{|l|}{INPUT}  & \multicolumn{1}{l|}{HFGCDECAHECBCFDECHD} \\ \hline
+		\multicolumn{1}{|l|}{OUTPUT} & \multicolumn{1}{l|}{CABE}                \\ \hline
+	\end{tabular}
+\end{table}
+}
+
+\subsection{Power Consumption Orogonal Design}
+Power consumption is the most important thing in the electronic design, adding more component
+mean more power is needded to drive the device. Here data from experiment with original design
+in power consumption needed to drive the device:
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[h]
+	\centering
+	\caption{Original Power}
+	\label{my-label}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		\begin{tabular}[c]{@{}c@{}}Supply\\ Source\end{tabular} & \begin{tabular}[c]{@{}c@{}}Supply\\ Voltage\end{tabular} & \begin{tabular}[c]{@{}c@{}}Total\\ Current\\ (mA)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Quiescent\\ Current\\ (mA)\end{tabular} \\ \hline
+		\cellcolor[HTML]{EFEFEF}Vccint                          & 1.2                                                      & 2.01                                                           & 2.01                                                               \\ \hline
+		\cellcolor[HTML]{EFEFEF}Vccaux                          & 2.5                                                      & 3.00                                                           & 3.00                                                               \\ \hline
+		\cellcolor[HTML]{EFEFEF}Vcco25                          & 2.5                                                      & 0.20                                                           & 0.20                                                               \\ \hline
+	\end{tabular}
+\end{table}
+}
+
+\subsection{Power Consumption Watermark}
+Power consumption is the most important thing in the electronic design, adding more component
+mean more power is needded to drive the device. Here data from experiment with original design
+in power consumption needed to drive the device:
+{\renewcommand{\arraystretch}{1.2}
+	\begin{table}[h]
+		\centering
+		\caption{Watermark Power}
+		\label{watermark}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\rowcolor[HTML]{C0C0C0} 
+			\begin{tabular}[c]{@{}c@{}}Supply\\ Source\end{tabular} & \begin{tabular}[c]{@{}c@{}}Supply\\ Voltage\end{tabular} & \begin{tabular}[c]{@{}c@{}}Total\\ Current\\ (mA)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Quiescent\\ Current\\ (mA)\end{tabular} \\ \hline
+			\cellcolor[HTML]{EFEFEF}Vccint                          & 1.2                                                      & 2.89                                                           & 2.01                                                               \\ \hline
+			\cellcolor[HTML]{EFEFEF}Vccaux                          & 2.5                                                      & 3.00                                                           & 3.00                                                               \\ \hline
+			\cellcolor[HTML]{EFEFEF}Vcco25                          & 2.5                                                      & 0.20                                                           & 0.20                                                               \\ \hline
+		\end{tabular}
+	\end{table}
+}
+%////////////////////////////////////////////////////////////////////////////////////
+% COMPARISON
+%////////////////////////////////////////////////////////////////////////////////////
+\subsection{Comparison}
+On the Table 2 are comparison about all parameter that tested on
+{\renewcommand{\arraystretch}{1.2}
+\begin{table}[h]
+	\centering
+	\caption{Comparison}
+	\label{comparison}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		No.                        & Parameter  & Before & After  & Delta \\ \hline
+		\cellcolor[HTML]{EFEFEF}1. & Gates      & 5234   & 5324   & 1.72  \\ \hline
+		\cellcolor[HTML]{EFEFEF}2. & Layout     & Lamda  & lamda  &       \\ \hline
+		\cellcolor[HTML]{EFEFEF}3. & Power      & A      & A      &       \\ \hline
+		\cellcolor[HTML]{EFEFEF}4. & Functional & Normal & Normal & zero  \\ \hline
+	\end{tabular}
+\end{table}
+}
+%////////////////////////////////////////////////////////////////////////////////////
+% KESIMPULAN
+%////////////////////////////////////////////////////////////////////////////////////
+\section{Conclusion}
+From the experiment testing for performance analysis with given parameter. The percentage change is still within reasonable limits. So that in its application still can be applied.
+%\begin{figure*}[!h]
+%	\centering
+%	\includegraphics[scale=1.7]{images/gate1}
+%	\caption{Simulation results for the network.}
+%	\label{fig_sim}
+%\end{figure*}
+
 \appendices
 \section{Proof of the First Zonklar Equation}
 Appendix one text goes here.
@@ -214,13 +349,38 @@ The authors would like to thank...
 
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka1}
-H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\bibitem{IEEEhowto:kopka2}
+\bibitem{IEEEhowto:kopka}
 H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
 0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\bibitem{chapman}
+R. Chapman and T. S. Durrani, “IP Protection of DSP Algorithms for System on Chip Implementation,” vol. 48, no. 3, pp. 854–861, 2000.
+
+\bibitem{water}
+“Watermarking Techniques for Electronic Circuit Design,” no. 1, pp. 1–17.
+
+\bibitem{lui}
+Q. Liu, W. Ji, Q. Chen, and T. Mak, “IP Protection of Mesh NoCs Using Square Spiral Routing,” vol. 24, no. 4, pp. 1560–1573, 2016.
+
+\bibitem{cui}
+A. Cui, C. Chang, S. Member, S. Tahar, and S. Member, “A Robust FSM Watermarking Scheme for IP Protection of Sequential Circuit Design,” vol. 30, no. 5, pp. 678–690, 2011.
+
+\bibitem{nie}
+T. Nie, “Performance Evaluation for IP Protection Watermarking Techniques.”
+
+\bibitem{zhang1}
+J. Zhang, Y. Lin, Y. Lyu, G. Qu, and S. Member, “A PUF-FSM Binding Scheme for FPGA IP Protection and Pay-Per-Device Licensing,” vol. 10, no. 6, pp. 1137–1150, 2015.
+
+\bibitem{zhang2}
+J. Zhang, Y. Lin, Q. Wu, and W. Che, “Watermarking FPGA Bitfile for Intellectual Property Protection,” pp. 764–771.
+
+\bibitem{kahng}
+A. B. Kahng et al., “Watermarking Techniques for Intellectual Property Protection.”
+
+\bibitem{mosh}
+V. G. Moshnyaga and H. Nita, “STG-based Detection of Power Virus Inputs in FSM.”
+
+
 
 \end{thebibliography}
 

@@ -1,31 +1,37 @@
 \contentsline {chapter}{HALAMAN JUDUL}{i}{section*.2}
-\contentsline {chapter}{LEMBAR PERSETUJUAN}{ii}{section*.4}
+\contentsline {chapter}{LEMBAR PENGESAHAN}{ii}{section*.4}
 \contentsline {chapter}{LEMBAR PERNYATAAN ORISINALITAS}{iii}{section*.5}
-\contentsline {chapter}{LEMBAR PENGESAHAN}{iv}{section*.6}
-\contentsline {chapter}{\uppercase {Kata Pengantar}}{v}{section*.7}
-\contentsline {chapter}{LEMBAR PERSETUJUAN PUBLIKASI ILMIAH}{vi}{section*.8}
-\contentsline {chapter}{ABSTRAK}{vii}{section*.9}
-\contentsline {chapter}{Daftar Isi}{ix}{section*.9}
-\contentsline {chapter}{Daftar Gambar}{xi}{section*.9}
-\contentsline {chapter}{Daftar Tabel}{xii}{section*.9}
-\contentsline {chapter}{\numberline {1}\uppercase {Pendahuluan}}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Permasalahan}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Definisi Permasalahan}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Batasan Permasalahan}{2}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Tujuan}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Posisi Penelitian}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}Metodologi Penelitian}{3}{section.1.5}
-\contentsline {section}{\numberline {1.6}Sistematika Penulisan}{3}{section.1.6}
+\contentsline {chapter}{ABSTRAK}{iv}{section*.6}
+\contentsline {chapter}{\uppercase {Kata Pengantar}}{vi}{section*.7}
+\contentsline {chapter}{DAFTAR ISI}{vii}{section*.7}
+\contentsline {chapter}{DAFTAR GAMBAR}{ix}{section*.7}
+\contentsline {chapter}{DAFTAR TABEL}{x}{section*.7}
+\contentsline {chapter}{DAFTAR SINGKATAN}{xi}{section*.8}
+\contentsline {chapter}{DAFTAR SIMBOL}{xi}{section*.9}
+\contentsline {chapter}{DAFTAR ISTILAH}{xii}{section*.10}
+\contentsline {chapter}{DAFTAR LAMPIRAN}{xiii}{section*.11}
+\contentsline {chapter}{\numberline {1}\uppercase {Pendahuluan}}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Latar Belakang}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Permasalahan}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definisi Permasalahan}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Batasan Permasalahan}{3}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Tujuan}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Posisi Penelitian}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Metodologi Penelitian}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}Sistematika Penulisan}{4}{section.1.6}
 \contentsline {chapter}{\numberline {2}\uppercase {Tinjauan Pustaka}}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}\LaTeX \nobreakspace {}Secara Singkat}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}\LaTeX \nobreakspace {}Kompiler dan IDE}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Bold, Italic, dan Underline}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Memasukan Gambar}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Membuat Tabel}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}\uppercase {Desain dan Simulasi}}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Satu Persamaan}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Lebih dari Satu Persamaan}{9}{section.3.2}
+\contentsline {section}{\numberline {2.1}Pekerjaan Sebelumnya dan Keterkaitan}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Perancangan dan Implementasi Algoritme DSP untuk IPP}{6}{section.2.2}
+\contentsline {chapter}{\numberline {3}\uppercase {Desain dan Simulasi}}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Studi Literatur}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Analisis}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Perancangan}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}Pengujian}{9}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Kerahasiaan algoritme}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Tingkat Ketahanan Uji}{9}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Tingkat Penurunan Performa}{10}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Tingkat Deteksi}{10}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Data Pengujian}{10}{section.3.5}
 \contentsline {chapter}{\numberline {4}\uppercase {Pengujian dan Analisis}}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}thesis.tex}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}laporan\_setting.tex}{11}{section.4.2}
@@ -37,5 +43,5 @@
 \contentsline {section}{\numberline {5.1}Kesimpulan}{13}{section.5.1}
 \contentsline {section}{\numberline {5.2}Saran}{13}{section.5.2}
 \contentsline {chapter}{Daftar Referensi}{14}{section.5.2}
-\contentsline {chapter}{LAMPIRAN}{1}{section*.15}
-\contentsline {chapter}{Lampiran 1}{2}{section*.16}
+\contentsline {chapter}{LAMPIRAN}{1}{section*.17}
+\contentsline {chapter}{Lampiran 1}{2}{section*.18}

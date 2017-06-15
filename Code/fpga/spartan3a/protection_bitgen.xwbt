@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\REPO\FinalProject\Code\fpga\spartan3a\protection.ncd
+OUTFILE=C:\REPO\FinalProject\Code\fpga\spartan3a\protection.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-4tq144
+WORKINGDIR=C:\REPO\FinalProject\Code\fpga\spartan3a
+LICENSE=WebPack
+USER_INFO=211180743_0_0_775

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alucontrol.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alucontrol.syr" 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alucontrol.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alucontrol.syr" 

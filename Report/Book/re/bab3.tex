@@ -1,71 +1,133 @@
 %-----------------------------------------------------------------------------%
 \chapter{\babTiga}
 %-----------------------------------------------------------------------------%
-\todo{tambahkan kata-kata pengantar bab 1 disini}
+%\todo{tambahkan kata-kata pengantar bab 1 disini}
 
 
 %-----------------------------------------------------------------------------%
-\section{Satu Persamaan}
+\section{Studi Literatur}
 %-----------------------------------------------------------------------------%
 
-\noindent \begin{align}\label{eq:garis}
-	\cfrac{y - y_{1}}{y_{2} - y_{1}} = 
-	\cfrac{x - x_{1}}{x_{2} - x_{1}}
-\end{align}
+\section{Analisis}
 
-\equ~\ref{eq:garis} diatas adalah persamaan garis. 
-\equ~\ref{eq:garis} dan \ref{eq:bola} sama-sama dibuat dengan perintah \bslash
-align. 
-Perintah ini juga dapat digunakan untuk menulis lebih dari satu persamaan. 
+Analisis dilakukan untuk mengkaji masalah yang ada, mendefinisikan
+batasan dalam masalah, lalu mencari solusi dari masalah tersebut. Analisis juga
+meliputi performa rancangan modul yang telah diberi watermark yang diuji coba
+dalam board FPGA.
 
-\noindent \begin{align}\label{eq:bola}
-	\underbrace{|\overline{ab}|}_{\text{pada bola $|\overline{ab}| = r$}} 
-		= \sqrt[2]{(x_{b} - x_{a})^{2} + (y_{b} - y_{a})^{2} + 
-				\vert\vert(z_{b} - z_{a})^{2}}
-\end{align}
+\section{Perancangan}
 
-%-----------------------------------------------------------------------------%
-\section{Lebih dari Satu Persamaan}
-\label{sec:multiEqu}
-%-----------------------------------------------------------------------------%
-\noindent \begin{align}\label{eq:matriks}	
-	|\overline{a} * \overline{b}| &= |\overline{a}| |\overline{b}| \sin\theta 
-		\\[0.2cm]
-	\overline{a} * \overline{b} &=  
-		\begin{array}{| c c c |}
-			\hat{i} & x_{1} & x_{2} \\
-			\hat{j} & y_{1} & y_{2} \\
-			\hat{k} & z_{1} & z_{2} \\
-		\end{array} \nonumber \\[0.2cm]
-	&= \hat{i} \,
-		\begin{array}{ | c c | }
-			y_{1} & y_{2} \\
-			z_{1} & z_{2} \\
-		\end{array} 
-	   + \hat{j} \,
-		\begin{array}{ | c c | }
-			z_{1} & z_{2} \\
-			x_{1} & x_{2} \\
-		\end{array} 
-	   + \hat{k} \,	
-		\begin{array}{ | c c | }
-			x_{1} & x_{2} \\
-			y_{1} & y_{2} \\
-		\end{array}
-		\nonumber
-\end{align}
+Pada tahap ini dilakukan pengkajian masalah serta pendefinisian batasan
+masalah. Pencarian solusi atas masalah yang muncul juga dilakukan. Tahap ini
+juga meliputi analisis penempatan dan penentuan jalur dalam pemasangan
+rangkaian uji IP Protection pada VLSI.
 
-Pada \equ~\ref{eq:matriks} dapat dilihat beberapa baris menjadi satu bagian 
-dari \equ~\ref{eq:matriks}. 
-Sedangkan dibawah ini dapat dilihat bahwa dengan cara yang sama, \equ~
-\ref{eq:gabungan1}, \ref{eq:gabungan2}, dan \ref{eq:gabungan3} memiliki nomor 
-persamaannya masing-masing. 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.6]{images/flow}
+	\caption{Simulation results for the network.}
+	\label{fig_sim}
+\end{figure}
 
-\noindent \begin{align}\label{eq:gabungan1}	
-	\int_{a}^{b} f(x)\, dx + \int_{b}^{c} f(x) \, dx = \int_{a}^{c} f(x) \, dx
-		\\\label{eq:gabungan2}
-	\lim_{x \to \infty} \frac{f(x)}{g(x)} = 0 \hspace{1cm} 
-		\text{jika pangkat $f(x)$ $<$ pangkat $g(x)$} \\\label{eq:gabungan3}
-	a^{m^{a \, ^{n}\log b }} = b^{\frac{m}{n}}
-\end{align}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{images/box}
+	\caption{Simulation results for the network.}
+	\label{fig_sim}
+\end{figure}
 
+Penelitian kali ini akan melakukan simulasi desain controller HDMI
+menggunakan FPGA. Desain controller ini akan di-tes performa-nya dengan
+menjalankan fail multimedia. Controller akan disambung-kan ke connector
+HDMI lalu menampilkan hasil keluaran multimedia pada monitor atau TV.
+Kemudian di dalam controller HDMI ini akan disisipkan rangkaian watermark
+dan akan dilakukan pengecekan performa-nya lagi untuk mengetahui terjadinya
+penurunan performa karena watermark.
+
+Dalam penelitian ini teknik watermark yang digunakan adalah
+menggabungkan rangkaian logical polimorph gate sebagai kunci utama untuk
+mengaktifkan rangkaian Digital Signal Filter yang akan diberi masukan kunci
+kedua untuk memanggil data watermark dalam chip.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{images/polymorphgate}
+	\caption{Simulation results for the network.}
+	\label{fig_sim}
+\end{figure}
+
+
+Setelah unique key dari Polygates di masukan (contoh: K1 - K4), maka pin
+input untuk algoritme DSP aktif (contoh: pin A – C) yang kemudian akan
+mengolah key untuk penampilan watermark dalam chip.
+
+Setelah polygate mengaktifkan filter yang dipilih maka data dari pin input
+DSP (contoh: pin A – C) masuk ke dalam filter yang aktif dan akan diolah sebagai
+data input watermark.
+
+\section{Pengujian}
+
+Pada tahap ini dilakukan serangkaikan uji coba untuk mengukur parameter
+performa rangkaian VLSI yang telah disisipkan rangkaian uji IP Protection.
+Petitcolas [13] mengidentifikasi beberapa hal yang menjadi bahan evaluasi untuk
+IP Protection :
+
+\subsection{Kerahasiaan algoritme}
+
+Merujuk pada aturan keamanan yang dijelaskan oleh Kerckhoffs [14] pada
+tahun 1883, setiap enkripsi atau teknik keamanan tidak boleh mengandalkan
+kerahasiaan suatu algoritme, tetapi pada kompleksitas matematis algoritme
+tersebut.
+
+\subsection{Tingkat Ketahanan Uji}
+
+Ini adalah aspek yang sangat penting. Aspek ini berisi tentang ketahanan
+algoritme dari serangan dan persentase dari IP Protection tak terdeteksi.
+Kemungkinan detector salah mendeteksi algoritme pada rangkaian tanpa
+algoritme juga diperhitungkan di aspek ini.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{images/gate1}
+	\caption{Simulation results for the network.}
+	\label{fig_sim}
+\end{figure}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.8]{images/gatePlace}
+	\caption{Simulation results for the network.}
+	\label{fig_sim}
+\end{figure}
+
+\subsection{Tingkat Penurunan Performa}
+
+Penurunan performa saat menyisipkan suatu metode IP Protection adalah
+hal yang tak dapat dihindari. Tetapi penurunan performa yang terlalu besar akan
+menjadi masalah. Maka dari itu, perbandingan performa antara rangkaian yang
+telah disisipkan IP Protection dan rangkaian tanpa IP Protection harus dilakukan.
+
+\subsection{Tingkat Deteksi}
+
+Penyisipan watermark merupakan bagian dari proses, pelacak-kan dan
+deteksi dalam teknik watermark IC. Pelacak-kan dan deteksi watermark pada
+kemungkinan penyerangan merupakan aspek yang akan dijadikan pertimbangan
+pada teknik watermark.
+
+\section{Data Pengujian}
+
+Metode yang akan digunakan merupakan simulasi pada board FPGA
+dengan desain modul yang sudah ada dan menyisipkan suatu rangkaian tambahan
+watermarking dan menguji perubahan performa modul yang telah di sisipkan
+watermark tersebut.
+
+Dalam penelitian ini akan menggunakan teknik Digital Signal Processing
+Watermarking pada modul yang telah ada dengan kombinasi perhitungan loop
+biner dengan output yang akan membentuk nama dari produsen asli modul
+tersebut. Modul yang telah diberi watermark akan tetap dapat diuji keabsahan
+pemiliknya walaupun modul telah digabungkan dengan modul lain dalam sebuah
+proyek modul VLSI.
+
+Kemudian setelah modul disisipkan watermark, kami akan menguji
+performa modul tersebut dengan mengharapkan tidak ada perubahan berarti
+terhadap modul yang telah diberi watermark tersebut.

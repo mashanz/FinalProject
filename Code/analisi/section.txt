@@ -1,0 +1,66 @@
+#######################################################
+#                   JURNAL 10 sheet                   #
+#######################################################
+Title
+abstract
+1. Introduction
+2. Related Work
+3. Watermarking
+	3.1 Polymorph
+	3.2 Watermark Flow
+	3.3 Data I/O
+	3.4 Layouting
+	3.5 Layout Verification
+	3.6 Mixed Random Gate Placement
+4. Analysis
+	4.1 Watermark Softwere simulation
+	4.2 Power Consumption Original
+	4.3 Power Consumption After Watermark
+	4.4 Comparson
+5. Conclusion
+Appendix A
+Appendix B
+Acknowladgments
+Refference
+Biografi
+#######################################################
+#                       BUKU TA                       #
+#######################################################
+Cover
+Lembar Pengesahan
+Lembar Pernyataan Orisinalitas
+Abstrak
+Abstract
+Kata Pengantar
+
+Daftar Isi <<<<<<<<<
+Daftar Table
+Daftar singkatan
+Daftar simbol
+Daftar Istilah
+Daftar Lampiran
+
+BAB 1 Pendahuluan
+	1.1 Latar Belakang
+	1.2 Rumusan Masalah
+	1.3 Tujuan
+	1.4 Batasan Masalah
+	1.5 Metode Penyelesaian Masalah
+	1.6 Sistematika Penulisan
+BAB 2 Tinjauan Pustaka
+	2.1 Intelektual Properti
+		2.1.1 Integrated Ciscuit
+	2.2 Protection
+BAB 3 Desain dan Simulasi
+	3.1 Gambaran Umum Perlindungan
+	3.2 Desain Perlindungan
+	3.3 Simulasi Perlindungan
+BAB 4 Pengujian dan Analisis
+	4.1 Parameter Pengujian
+	4.2 Pengujian Desain Perlindungan
+	4.3 Pengujian Perlindungan Intelektual Properti
+	4.4 Pengujian Umum?
+BAB 5 Kesimpulan dan Saran
+	5.1 Kesimpulan
+	5.2 Saran
+Daftar Pustaka

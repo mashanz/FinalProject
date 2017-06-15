@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/protection.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/protection.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-4 protection.ngc protection.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o protection_map.ncd protection.ngd protection.pcf 
+par -w -intstyle ise -ol high -t 1 protection_map.ncd protection.ncd protection.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml protection.twx protection.ncd -o protection.twr protection.pcf 
+bitgen -intstyle ise -f protection.ut protection.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim protection.ngc protection_synthesis.v 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/protection.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/protection.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-4 protection.ngc protection.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o protection_map.ncd protection.ngd protection.pcf 
+par -w -intstyle ise -ol high -t 1 protection_map.ncd protection.ncd protection.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml protection.twx protection.ncd -o protection.twr protection.pcf 
+xpwr -intstyle ise protection.ncd protection.pcf -o protection.pwr 
