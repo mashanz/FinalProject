@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.11)  16 JUN 2017 00:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.11)  16 JUN 2017 07:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -400,7 +400,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks26
 \@floatcapt=\box31
-)) (./laporan_setting.tex)
+)) (./laporan_setting.tex
+(c:/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen140
+\lightrulewidth=\dimen141
+\cmidrulewidth=\dimen142
+\belowrulesep=\dimen143
+\belowbottomsep=\dimen144
+\aboverulesep=\dimen145
+\abovetopsep=\dimen146
+\cmidrulesep=\dimen147
+\cmidrulekern=\dimen148
+\defaultaddspace=\dimen149
+\@cmidla=\count120
+\@cmidlb=\count121
+\@aboverulesep=\dimen150
+\@belowrulesep=\dimen151
+\@thisruleclass=\count122
+\@lastruleclass=\count123
+\@thisrulewidth=\dimen152
+)
+(c:/texlive/2016/texmf-dist/tex/latex/multirow/bigstrut.sty)
+(c:/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count124
+))
 \@input{hype.indonesia.aux}
 \openout2 = `hype.indonesia.aux'.
 
@@ -419,31 +444,38 @@ LaTeX Warning: Label `fig_sim' multiply defined.
 
 LaTeX Warning: Label `fig_sim' multiply defined.
 
-) (./bab4.aux) (./kesimpulan.aux) (./pustaka.aux) (./markLampiran.aux)
-(./lampiran.aux))
+) (./bab4.aux
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+
+LaTeX Warning: Label `tab:addlabel' multiply defined.
+
+) (./kesimpulan.aux) (./pustaka.aux) (./markLampiran.aux) (./lampiran.aux))
 \openout1 = `skripsi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 12
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 11
 .
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omspzccm.fd
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 11.
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -451,11 +483,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count120
+\c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 
 (./skripsi.out) (./skripsi.out)
 \@outlinefile=\write3
@@ -464,16 +496,16 @@ LaTeX Info: Redefining \nameref on input line 12.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen140
+\scratchcounter=\count126
+\scratchdimen=\dimen153
 \scratchbox=\box33
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen141
-\MPnumerator=\count125
-\makeMPintoPDFobject=\count126
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen154
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -543,10 +575,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 6.
 
-<pics/telu.png, id=188, 1027.84pt x 1027.84pt>
+<pics/telu.png, id=160, 1027.84pt x 1027.84pt>
 File: pics/telu.png Graphic file (type png)
  <use pics/telu.png>
-Package pdftex.def Info: pics/telu.png used on input line 22.
+Package pdftex.def Info: pics/telu.png used on input line 21.
 (pdftex.def)             Requested size: 128.0374pt x 128.02486pt.
  [1
 
@@ -561,7 +593,7 @@ Package pdftex.def Info: pics/telu.png used on input line 22.
 (./judul_dalam.tex
 File: pics/telu.png Graphic file (type png)
  <use pics/telu.png>
-Package pdftex.def Info: pics/telu.png used on input line 22.
+Package pdftex.def Info: pics/telu.png used on input line 21.
 (pdftex.def)             Requested size: 128.0374pt x 128.02486pt.
  [1
 
@@ -614,70 +646,62 @@ Missing character: There is no ì in font ptmr7t!
 
 
 ] (./skripsi.toc
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 14
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 15
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 14
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 15
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 14
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 15
 .
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
  [7
 
 
-])
+] [8])
 \tf@toc=\write4
 \openout4 = `skripsi.toc'.
 
-
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-[8] (./skripsi.lof)
+ [9]
+(./skripsi.lof)
 \tf@lof=\write5
 \openout5 = `skripsi.lof'.
 
- [9
+ [10
 
 
 ] (./skripsi.lot)
 \tf@lot=\write6
 \openout6 = `skripsi.lot'.
 
- [10
-
-
-] [11
+ [11
 
 
 ] [12
 
+
 ] [13
+
+] [14
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \include{bab1}
+l.59 \include{bab1}
                     [1
 
 ]
@@ -689,68 +713,14 @@ BAB 1.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
 [2
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 44--47
-\OT1/ptm/m/n/12 Pada bagian ini akan di-je-laskan me-nge-nai de-fi-nisi per-ma-
-sa-lahan yang
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3]
+] [3]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 124.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 106.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-)
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
+) [4]
 \openout2 = `bab2.aux'.
 
  (./bab2.tex
@@ -759,28 +729,11 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
 [5
 
 
 
-])
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6]
+]) [6]
 \openout2 = `bab3.aux'.
 
  (./bab3.tex
@@ -789,76 +742,67 @@ BAB 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<images/flow.png, id=391, 481.04718pt x 406.51875pt>
+<images/flow.png, id=371, 481.04718pt x 406.51875pt>
 File: images/flow.png Graphic file (type png)
  <use images/flow.png>
-Package pdftex.def Info: images/flow.png used on input line 27.
+Package pdftex.def Info: images/flow.png used on input line 26.
 (pdftex.def)             Requested size: 288.63054pt x 243.91312pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
 
-<images/box.png, id=392, 374.90062pt x 188.95593pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/box.png, id=372, 374.90062pt x 188.95593pt>
 File: images/box.png Graphic file (type png)
  <use images/box.png>
-Package pdftex.def Info: images/box.png used on input line 34.
+Package pdftex.def Info: images/box.png used on input line 33.
 (pdftex.def)             Requested size: 299.9209pt x 151.16493pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/polymorphgate.png, id=373, 383.93437pt x 163.3603pt>
+File: images/polymorphgate.png Graphic file (type png)
+
+<use images/polymorphgate.png>
+Package pdftex.def Info: images/polymorphgate.png used on input line 87.
+(pdftex.def)             Requested size: 307.1479pt x 130.6884pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
 [7
 
 
 
- <./images/flow.png>]
-<images/polymorphgate.png, id=398, 383.93437pt x 163.3603pt>
-File: images/polymorphgate.png Graphic file (type png)
-
-<use images/polymorphgate.png>
-Package pdftex.def Info: images/polymorphgate.png used on input line 54.
-(pdftex.def)             Requested size: 307.1479pt x 130.6884pt.
+] [8] [9 <./images/flow.png> <./images/box.png> <./images/polymorphgate.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8 <./images/box.png> <./images/polymorphgate.png>]
-<images/gate1.png, id=405, 284.56313pt x 354.57469pt>
+<images/gate1.png, id=389, 284.56313pt x 354.57469pt>
 File: images/gate1.png Graphic file (type png)
  <use images/gate1.png>
-Package pdftex.def Info: images/gate1.png used on input line 91.
+Package pdftex.def Info: images/gate1.png used on input line 123.
 (pdftex.def)             Requested size: 227.6508pt x 283.66013pt.
 
-<images/gatePlace.png, id=406, 161.10187pt x 162.6075pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/gatePlace.png, id=390, 161.10187pt x 162.6075pt>
 File: images/gatePlace.png Graphic file (type png)
 
 <use images/gatePlace.png>
-Package pdftex.def Info: images/gatePlace.png used on input line 98.
+Package pdftex.def Info: images/gatePlace.png used on input line 130.
 (pdftex.def)             Requested size: 128.88167pt x 130.08617pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9 <./images/gate1.png>])
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10 <./images/gatePlace.png>]
+[10] [11 <./images/gate1.png> <./images/gatePlace.png>]) [12]
 \openout2 = `bab4.aux'.
 
  (./bab4.tex
@@ -868,33 +812,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 4--24
 []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-
-Underfull \hbox (badness 1484) in paragraph at lines 36--41
-\OT1/ptm/m/n/12 Berkas ini berisi cara pe-meng-galan be-be-rapa kata dalam ba-h
-asa In-done-sia.
- []
-
-[11
+) [13
 
 
 
-])
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12]
+] [14]
 \openout2 = `kesimpulan.aux'.
 
  (./kesimpulan.tex
@@ -903,14 +829,87 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) [13
+) [15
 
 
 
 ]
 \openout2 = `pustaka.aux'.
 
- (./pustaka.tex) [14
+ (./pustaka.tex
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+) [16
 
 
 
@@ -932,45 +931,45 @@ l.13 \end{titlepage}
 ame{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 	\include{lampiran}
+l.70 	\include{lampiran}
                          [2
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 74.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 74.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./skripsi.aux (./sampul.aux) (./judul_dalam.aux)
 (./pengesahan.aux) (./orisinal.aux) (./abstrak.aux) (./abstract.aux)
 (./pengantar.aux) (./bab1.aux) (./bab2.aux) (./bab3.aux) (./bab4.aux)
 (./kesimpulan.aux) (./pustaka.aux) (./markLampiran.aux) (./lampiran.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 74.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 74.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: 565E45F1455F5A5641FD4247222428BF;2929.
+(rerunfilecheck)             Checksum: 72D9E61132CDD0F4637A72051F5DD127;2435.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 9410 strings out of 493014
- 137084 string characters out of 6137001
- 243261 words of memory out of 5000000
- 12552 multiletter control sequences out of 15000+600000
- 27374 words of font info for 53 fonts, out of 8000000 for 9000
+ 9783 strings out of 493014
+ 141434 string characters out of 6137001
+ 263980 words of memory out of 5000000
+ 12898 multiletter control sequences out of 15000+600000
+ 25789 words of font info for 51 fonts, out of 8000000 for 9000
  1210 hyphenation exceptions out of 8191
- 44i,12n,45p,1002b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,45p,982b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/time
 s/utmbi8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/
 texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on skripsi.pdf (30 pages, 219770 bytes).
+Output written on skripsi.pdf (33 pages, 215724 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 433 compressed objects within 5 object streams
- 79 named destinations out of 1000 (max. 500000)
- 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

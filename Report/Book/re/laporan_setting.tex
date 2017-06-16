@@ -2,6 +2,16 @@
 % Informasi Mengenai Dokumen
 %-----------------------------------------------------------------------------%
 % 
+\usepackage{booktabs}
+\usepackage{bigstrut}
+
+\usepackage{colortbl}
+\usepackage{etoolbox}
+\patchcmd{\tableofcontents}{\@starttoc}{\vspace{-1cm}\@starttoc}{}{}
+%-----------------------------------------------------------------------------%
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
 % Judul laporan. 
 \var{\judul}{DESAIN DAN SIMULASI
 	PERLINDUNGAN PROPERTI INTELEKTUAL
@@ -13,8 +23,8 @@
 	MENGGUNAKAN ALGORITME FILTER DIGITAL}
 % 
 % Tulis kembali judul laporan namun dengan bahasa Ingris
-\var{\judulInggris}{Design and Simulation of Intelectual Properties Protection
-	using Digital Filter Algorithm}
+\var{\judulInggris}{DESIGN AND SIMULATION OF INTELECTUAL PROPERTIES PROTECTION
+	USING DIGITAL FILTER ALGORITHM}
 
 % 
 % Tipe laporan, dapat berisi Skripsi, Tugas Akhir, Thesis, atau Disertasi
@@ -44,7 +54,7 @@
 \Var{\bulanTahun}{2017}
 % 
 % Tuliskan gelar yang akan diperoleh dengan menyerahkan laporan ini
-\var{\gelar}{Sarjana Teknik Fakultas Teknik Elektro\\Universitas Telkom}
+\var{\gelar}{S1 Sistem Komputer}
 % 
 % Tuliskan tanggal pengesahan laporan, waktu dimana laporan diserahkan ke 
 % penguji/sekretariat
@@ -67,7 +77,7 @@
 % Berikut ada judul-judul setiap bab. 
 % Silahkan diubah sesuai dengan kebutuhan. 
 % 
-\Var{\kataPengantar}{Kata Pengantar}
+\Var{\kataPengantar}{KATA PENGANTAR}
 \Var{\babSatu}{Pendahuluan}
 \Var{\babDua}{Tinjauan Pustaka}
 \Var{\babTiga}{Desain dan Simulasi}

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\REPO\FinalProject\Code\fpga\spartan3a\top_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/REPO/FinalProject/Code/fpga/spartan3a/top_isim_beh.wdb 
+Running: C:\REPO\FinalProject\Code\fpga\spartan3a\alu_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -11,3 +11,24 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+                   0 REG A = 00000000 REG Z = 00000000
+                  10 REG A = 00000111 REG Z = 01000000
+                  20 REG A = 00000101 REG Z = 10000000
+                  30 REG A = 00000110 REG Z = 11001110
+                  40 REG A = 00000010 REG Z = 00001110
+                  50 REG A = 00000011 REG Z = 01001110
+                  60 REG A = 00000100 REG Z = 10001110
+                  70 REG A = 00000010 REG Z = 11010010
+                  80 REG A = 00000000 REG Z = 00010010
+                  90 REG A = 00000111 REG Z = 01010010
+                 100 REG A = 00000100 REG Z = 10010010
+                 110 REG A = 00000010 REG Z = 11011010
+                 120 REG A = 00000001 REG Z = 00011010
+                 130 REG A = 00000010 REG Z = 01011010
+                 140 REG A = 00000101 REG Z = 10011010
+                 150 REG A = 00000011 REG Z = 11100011
+                 160 REG A = 00000100 REG Z = 00100011
+                 170 REG A = 00000010 REG Z = 01100011
+                 180 REG A = 00000111 REG Z = 10100011
+                 190 REG A = 00000011 REG Z = 11101011
+Stopped at time : 200 ns : File "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.v" Line 78

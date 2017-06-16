@@ -1,5 +1,5 @@
-read_verilog module/alu_8bit_min.v
-hierarchy -check -top alu_8bit
+read_verilog ./module/selesai/alu.v
+hierarchy -check -top alu
 proc; opt; memory; fsm; opt
 techmap; opt
 dfflibmap -liberty lib/simple.lib

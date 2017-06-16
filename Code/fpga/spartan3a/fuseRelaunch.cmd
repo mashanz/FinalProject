@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/REPO/FinalProject/Code/fpga/spartan3a/top_isim_beh.exe" -prj "C:/REPO/FinalProject/Code/fpga/spartan3a/top_beh.prj" "work.top" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_isim_beh.exe" -prj "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_beh.prj" "work.alu_tb" "work.glbl" 
