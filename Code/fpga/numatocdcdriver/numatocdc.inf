@@ -1,0 +1,148 @@
+[Version] 
+Signature="$Windows NT$" 
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318} 
+Provider=%MFGNAME% 
+CatalogFile=%MFGFILENAME%.cat
+DriverVer=05/24/2016,0.0.0.6
+
+[Manufacturer] 
+%MFGNAME%=DeviceList,NTamd64
+
+[DeviceList]
+%DESCRIPTION.USB\VID_2A19&PID_0800%=DriverInstall,USB\VID_2A19&PID_0800
+%DESCRIPTION.USB\VID_2A19&PID_0801%=DriverInstall,USB\VID_2A19&PID_0801
+%DESCRIPTION.USB\VID_2A19&PID_0802%=DriverInstall,USB\VID_2A19&PID_0802
+
+%DESCRIPTION.USB\VID_2A19&PID_0C00%=DriverInstall,USB\VID_2A19&PID_0C00
+%DESCRIPTION.USB\VID_2A19&PID_0C01%=DriverInstall,USB\VID_2A19&PID_0C01
+%DESCRIPTION.USB\VID_2A19&PID_0C02%=DriverInstall,USB\VID_2A19&PID_0C02
+%DESCRIPTION.USB\VID_2A19&PID_0C03%=DriverInstall,USB\VID_2A19&PID_0C03
+%DESCRIPTION.USB\VID_2A19&PID_0C04%=DriverInstall,USB\VID_2A19&PID_0C04
+%DESCRIPTION.USB\VID_2A19&PID_0C05%=DriverInstall,USB\VID_2A19&PID_0C05
+%DESCRIPTION.USB\VID_2A19&PID_0C06%=DriverInstall,USB\VID_2A19&PID_0C06
+%DESCRIPTION.USB\VID_2A19&PID_0C07%=DriverInstall,USB\VID_2A19&PID_0C07
+
+%DESCRIPTION.USB\VID_2A19&PID_1000%=DriverInstall,USB\VID_2A19&PID_1000
+%DESCRIPTION.USB\VID_2A19&PID_1001%=DriverInstall,USB\VID_2A19&PID_1001
+%DESCRIPTION.USB\VID_2A19&PID_1002%=DriverInstall,USB\VID_2A19&PID_1002
+
+%DESCRIPTION.USB\VID_2A19&PID_0C0A%=DriverInstall,USB\VID_2A19&PID_0C0A
+%DESCRIPTION.USB\VID_2A19&PID_0C0B%=DriverInstall,USB\VID_2A19&PID_0C0B
+%DESCRIPTION.USB\VID_2A19&PID_0C0C%=DriverInstall,USB\VID_2A19&PID_0C0C
+%DESCRIPTION.USB\VID_2A19&PID_0C0D%=DriverInstall,USB\VID_2A19&PID_0C0D
+%DESCRIPTION.USB\VID_2A19&PID_0C0E%=DriverInstall,USB\VID_2A19&PID_0C0E
+
+%DESCRIPTION.USB\VID_2A19&PID_0804%=DriverInstall,USB\VID_2A19&PID_0804
+[DeviceList.NTamd64] 
+%DESCRIPTION.USB\VID_2A19&PID_0800%=DriverInstall,USB\VID_2A19&PID_0800
+%DESCRIPTION.USB\VID_2A19&PID_0801%=DriverInstall,USB\VID_2A19&PID_0801
+%DESCRIPTION.USB\VID_2A19&PID_0802%=DriverInstall,USB\VID_2A19&PID_0802
+%DESCRIPTION.USB\VID_2A19&PID_0803%=DriverInstall,USB\VID_2A19&PID_0803
+
+%DESCRIPTION.USB\VID_2A19&PID_0C00%=DriverInstall,USB\VID_2A19&PID_0C00
+%DESCRIPTION.USB\VID_2A19&PID_0C01%=DriverInstall,USB\VID_2A19&PID_0C01
+%DESCRIPTION.USB\VID_2A19&PID_0C02%=DriverInstall,USB\VID_2A19&PID_0C02
+%DESCRIPTION.USB\VID_2A19&PID_0C03%=DriverInstall,USB\VID_2A19&PID_0C03
+%DESCRIPTION.USB\VID_2A19&PID_0C04%=DriverInstall,USB\VID_2A19&PID_0C04
+%DESCRIPTION.USB\VID_2A19&PID_0C05%=DriverInstall,USB\VID_2A19&PID_0C05
+%DESCRIPTION.USB\VID_2A19&PID_0C06%=DriverInstall,USB\VID_2A19&PID_0C06
+%DESCRIPTION.USB\VID_2A19&PID_0C07%=DriverInstall,USB\VID_2A19&PID_0C07
+
+%DESCRIPTION.USB\VID_2A19&PID_1000%=DriverInstall,USB\VID_2A19&PID_1000
+%DESCRIPTION.USB\VID_2A19&PID_1001%=DriverInstall,USB\VID_2A19&PID_1001
+%DESCRIPTION.USB\VID_2A19&PID_1002%=DriverInstall,USB\VID_2A19&PID_1002
+
+%DESCRIPTION.USB\VID_2A19&PID_0C0A%=DriverInstall,USB\VID_2A19&PID_0C0A
+%DESCRIPTION.USB\VID_2A19&PID_0C0B%=DriverInstall,USB\VID_2A19&PID_0C0B
+%DESCRIPTION.USB\VID_2A19&PID_0C0C%=DriverInstall,USB\VID_2A19&PID_0C0C
+%DESCRIPTION.USB\VID_2A19&PID_0C0D%=DriverInstall,USB\VID_2A19&PID_0C0D
+%DESCRIPTION.USB\VID_2A19&PID_0C0E%=DriverInstall,USB\VID_2A19&PID_0C0E
+
+%DESCRIPTION.USB\VID_2A19&PID_0804%=DriverInstall,USB\VID_2A19&PID_0804
+
+
+;------------------------------------------------------------------------------
+;  Windows 32bit OSes Section
+;------------------------------------------------------------------------------
+[DriverInstall.nt] 
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection 
+AddReg=DriverInstall.nt.AddReg 
+
+[DriverInstall.nt.AddReg] 
+HKR,,DevLoader,,*ntkern 
+HKR,,NTMPDriver,,%DRIVERFILENAME%.sys 
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider" 
+
+[DriverInstall.NT.Services]
+include=mdmcpq.inf 
+AddService=usbser, 0x00000002, LowerFilter_Service_Inst 
+
+;------------------------------------------------------------------------------
+;  Windows 64bit OSes Section
+;------------------------------------------------------------------------------
+[DriverInstall.NTamd64]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=DriverInstall.NTamd64.AddReg 
+
+[DriverInstall.NTamd64.AddReg] 
+HKR,,DevLoader,,*ntkern 
+HKR,,NTMPDriver,,%DRIVERFILENAME%.sys 
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider" 
+
+[DriverInstall.NTamd64.Services] 
+include=mdmcpq.inf 
+AddService=usbser, 0x00000002, LowerFilter_Service_Inst 
+
+;------------------------------------------------------------------------------
+;  Common Sections
+;------------------------------------------------------------------------------
+[DestinationDirs] 
+DefaultDestDir=12 
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[FakeModemCopyFileSection]
+
+[LowerFilter_Service_Inst]
+DisplayName= %SERVICE%
+ServiceType= 1
+StartType  = 3
+ErrorControl = 0
+ServiceBinary = %12%\usbser.sys
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGFILENAME="numatocdc"
+DRIVERFILENAME ="usbser"
+MFGNAME="Numato Systems Pvt. Ltd."
+DESCRIPTION.USB\VID_2A19&PID_0800="Numato Lab 8 Channel USB GPIO Module"
+DESCRIPTION.USB\VID_2A19&PID_0801="Numato Lab 16 Channel USB GPIO Module"
+DESCRIPTION.USB\VID_2A19&PID_0802="Numato Lab 32 Channel USB GPIO Module"
+DESCRIPTION.USB\VID_2A19&PID_0C00="Numato Lab 2 Channel USB Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C01="Numato Lab 4 Channel USB Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C02="Numato Lab 8 Channel USB Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C03="Numato Lab 16 Channel USB Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C04="Numato Lab 32 Channel USB Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C05="Numato Lab 1 Channel USB Powered Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C06="Numato Lab 2 Channel USB Powered Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0C07="Numato Lab 4 Channel USB Powered Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_1000="Numato Lab Elbert V2 Spartan3A Development Board"
+DESCRIPTION.USB\VID_2A19&PID_1001="Numato Lab Mimas Spartan 6 Development Board"
+DESCRIPTION.USB\VID_2A19&PID_1002="Numato Lab Mimas V2 Spartan 6 Development Board"
+DESCRIPTION.USB\VID_2A19&PID_0C0A="Numato Lab 1 Channel USB SSR Module"
+DESCRIPTION.USB\VID_2A19&PID_0C0B="Numato Lab 2 Channel USB SSR Module"
+DESCRIPTION.USB\VID_2A19&PID_0C0C="Numato Lab 4 Channel USB SSR Module"
+DESCRIPTION.USB\VID_2A19&PID_0C0D="Numato Lab 8 Channel USB SSR Module"
+DESCRIPTION.USB\VID_2A19&PID_0C0E="Numato Lab 64 Channel USB Relay Module"
+DESCRIPTION.USB\VID_2A19&PID_0804="Numato Lab 64 Channel USB GPIO Module"
+SERVICE="Numato Lab USB CDC Driver"
+
+

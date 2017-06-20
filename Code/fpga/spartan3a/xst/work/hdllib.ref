@@ -1,3 +1,6 @@
+MO bridge NULL bridge.v vlg0D/bridge.bin 1497941281
 MO top NULL top.v vlg6F/top.bin 1497404321
-MO protection NULL protection.v vlg13/protection.bin 1497405709
+MO alu_min NULL alu_min.v vlg6D/alu__min.bin 1497941281
+MO protection NULL protection.v vlg13/protection.bin 1497941281
 MO alucontrol NULL alucontrol.v vlg23/alucontrol.bin 1497311218
+MO alu NULL alu.v vlg0A/alu.bin 1497941281

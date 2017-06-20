@@ -1,0 +1,4 @@
+verilog work "protection.v"
+verilog work "bridge.v"
+verilog work "alu_min.v"
+verilog work "alu.v"

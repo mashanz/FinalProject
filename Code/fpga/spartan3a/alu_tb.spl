@@ -1,0 +1,6 @@
+[Inputs]
+[Outputs]
+[BiDir]
+[ATTRIBUTES]
+VeriModel alu_tb
+

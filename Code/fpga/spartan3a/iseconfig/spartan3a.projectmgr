@@ -7,16 +7,18 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/bridge_tb C:|REPO|FinalProject|Code|fpga|spartan3a|bridge_tb.v</ClosedNode>
          <ClosedNode>/controller_tb C:|REPO|FinalProject|Code|fpga|spartan3a|controller.v</ClosedNode>
+         <ClosedNode>/protection_sim C:|REPO|FinalProject|Code|fpga|spartan3a|protection_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>prot - protection (C:/REPO/FinalProject/Code/fpga/spartan3a/protection.v)</SelectedItem>
+         <SelectedItem>alus - alu (C:/REPO/FinalProject/Code/fpga/spartan3a/alu.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000010f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000010f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>prot - protection (C:/REPO/FinalProject/Code/fpga/spartan3a/protection.v)</CurrentItem>
+      <CurrentItem>alus - alu (C:/REPO/FinalProject/Code/fpga/spartan3a/alu.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -59,6 +61,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
@@ -68,30 +71,32 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000148000000010000000100000000000000000000000064ffffffff000000810000000000000001000001480000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/alu_tb C:|REPO|FinalProject|Code|fpga|spartan3a|alu_tb.v/alus - alu</ClosedNode>
+         <ClosedNode>/bridge_tb C:|REPO|FinalProject|Code|fpga|spartan3a|bridge_tb.v</ClosedNode>
          <ClosedNode>/controller_tb C:|REPO|FinalProject|Code|fpga|spartan3a|controller.v</ClosedNode>
          <ClosedNode>/protection_sim C:|REPO|FinalProject|Code|fpga|spartan3a|protection_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>alu_tb (C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.v)</SelectedItem>
+         <SelectedItem>alus - alu (C:/REPO/FinalProject/Code/fpga/spartan3a/alu.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000010f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000010f0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000ee000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ee0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>alu_tb (C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.v)</CurrentItem>
+      <CurrentItem>alus - alu (C:/REPO/FinalProject/Code/fpga/spartan3a/alu.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -103,13 +108,27 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000148000000010000000100000000000000000000000064ffffffff000000810000000000000001000001480000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000148000000010000000100000000000000000000000064ffffffff000000810000000000000001000001480000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
