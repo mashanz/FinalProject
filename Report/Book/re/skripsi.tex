@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+
+\usepackage{uithesis}
+
+\input{laporan_setting}
+
+\include{hype.indonesia}
+
+\input{istilah}
+
+\begin{document}
+
+\include{sampul}
+
+\pagenumbering{roman}
+
+\addChapter{HALAMAN JUDUL}
+\include{judul_dalam}
+
+\setcounter{page}{2}
+
+\addChapter{LEMBAR PENGESAHAN}
+\include{pengesahan}
+
+\addChapter{LEMBAR PERNYATAAN ORISINALITAS}
+\include{orisinal}
+
+\addChapter{ABSTRAK}
+\include{abstrak}
+
+\addChapter{ABSTRACT}
+\include{abstract}
+
+\addChapter{\kataPengantar}
+\include{pengantar}
+
+\tableofcontents
+
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+\addChapter{DAFTAR SINGKATAN}
+\chapter*{DAFTAR SINGKATAN}
+
+\addChapter{DAFTAR SIMBOL}
+\chapter*{DAFTAR SIMBOL}
+
+\addChapter{DAFTAR ISTILAH}
+\chapter*{DAFTAR ISTILAH}
+
+\addChapter{DAFTAR LAMPIRAN}
+\chapter*{DAFTAR LAMPIRAN}
+
+\pagenumbering{arabic}
+
+\include{bab1}
+\include{bab2}
+\include{bab3}
+\include{bab4}
+\include{kesimpulan}
+
+\include{pustaka}
+
+\begin{appendix}
+	\include{markLampiran}
+	\setcounter{page}{2}
+	\include{lampiran}
+\end{appendix}
+
+\end{document}

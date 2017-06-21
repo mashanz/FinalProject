@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.v -lang verilog -prj spartan3a -o alu_tb.spl -module alu_tb -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a alu_tb.spl C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.sym 

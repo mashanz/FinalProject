@@ -1,9 +1,8 @@
-read_verilog module/protection.v
-hierarchy -check -top protection
+read_verilog ./module/selesai/alu.v
+hierarchy -check -top alu
 proc; opt; memory; fsm; opt
 techmap; opt
 dfflibmap -liberty lib/simple.lib
 abc -liberty lib/simple.lib
-opt
+clean
 write_verilog -norename -noattr cmp.v
-dffsr2dff

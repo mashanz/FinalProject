@@ -1,0 +1,526 @@
+$date
+   Tue Jun 13 06:44:21 2017
+$end
+$version
+  P.20131013
+$end
+$timescale
+  1ps
+$end
+$scope module controller_tb $end
+$var wire 1 ! memread $end
+$var wire 1 " memwrite $end
+$var wire 1 # irwrite [3] $end
+$var wire 1 $ irwrite [2] $end
+$var wire 1 % irwrite [1] $end
+$var wire 1 & irwrite [0] $end
+$var wire 1 D pcen $end
+$var wire 1 ( regwrite $end
+$var wire 1 ) aluop [1] $end
+$var wire 1 * aluop [0] $end
+$var wire 1 + alusrca $end
+$var wire 1 , alusrcb [1] $end
+$var wire 1 - alusrcb [0] $end
+$var wire 1 . pcsource [1] $end
+$var wire 1 / pcsource [0] $end
+$var wire 1 0 iord $end
+$var wire 1 1 memtoreg $end
+$var wire 1 2 regdst $end
+$var wire 1 3 pcwritecond $end
+$var wire 1 4 pcwrite $end
+$var reg 1 5 ph1 $end
+$var reg 1 6 ph2 $end
+$var reg 1 7 reset $end
+$var reg 6 8 opcode [5:0] $end
+$var reg 1 9 zero $end
+$scope module U0 $end
+$var wire 1 : ph1 $end
+$var wire 1 ; ph2 $end
+$var wire 1 < reset $end
+$var wire 1 = op5 $end
+$var wire 1 > op4 $end
+$var wire 1 ? op3 $end
+$var wire 1 @ op2 $end
+$var wire 1 A op1 $end
+$var wire 1 B op0 $end
+$var wire 1 C zero $end
+$var wire 1 D pcen $end
+$var reg 1 E memread $end
+$var reg 1 F memwrite $end
+$var reg 1 G irwrite3 $end
+$var reg 1 H irwrite2 $end
+$var reg 1 I irwrite1 $end
+$var reg 1 J irwrite0 $end
+$var reg 1 K regwrite $end
+$var reg 1 L aluop1 $end
+$var reg 1 M aluop0 $end
+$var reg 1 N alusrca $end
+$var reg 1 O alusrcb1 $end
+$var reg 1 P alusrcb0 $end
+$var reg 1 Q pcsource1 $end
+$var reg 1 R pcsource0 $end
+$var reg 1 S iord $end
+$var reg 1 T memtoreg $end
+$var reg 1 U regdst $end
+$var reg 4 V nextstate_s2 [3:0] $end
+$var reg 4 W state_s1 [3:0] $end
+$var reg 4 X state_s2 [3:0] $end
+$var reg 1 Y pcwrite $end
+$var reg 1 Z pcwritecond $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x%
+x$
+x#
+xD
+x(
+x*
+x)
+x+
+x-
+x,
+x/
+x.
+x"
+x&
+05
+06
+17
+bx 8
+09
+x0
+z4
+z3
+x2
+x1
+x!
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+xL
+xM
+xN
+xO
+xP
+xQ
+xR
+xS
+xT
+xU
+b0 V
+bx W
+bx X
+xY
+xZ
+0C
+1<
+0;
+0:
+x=
+xB
+x@
+xA
+x>
+x?
+$end
+#2000
+15
+07
+b100000 8
+0<
+1:
+1=
+0B
+0@
+0A
+0>
+0?
+#4000
+05
+0:
+#6000
+16
+b0 W
+1;
+#8000
+06
+0;
+#10000
+0%
+0$
+1#
+1D
+0(
+0*
+0)
+0+
+1-
+0,
+0/
+0.
+0"
+0&
+15
+00
+02
+01
+1!
+1E
+0F
+1G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+1P
+0Q
+0R
+0S
+0T
+0U
+b1 V
+b0 X
+1Y
+0Z
+1:
+#12000
+05
+0:
+#14000
+16
+b1 W
+1;
+#16000
+06
+0;
+#18000
+1$
+0#
+15
+1E
+0G
+1H
+1P
+b10 V
+b1 X
+1Y
+1:
+#20000
+05
+0:
+#22000
+16
+b10 W
+1;
+#24000
+06
+0;
+#26000
+1%
+0$
+15
+1E
+0H
+1I
+1P
+b11 V
+b10 X
+1Y
+1:
+#28000
+05
+0:
+#30000
+16
+b11 W
+1;
+#32000
+06
+0;
+#34000
+0%
+1&
+15
+1E
+0I
+1J
+1P
+b100 V
+b11 X
+1Y
+1:
+#36000
+05
+0:
+#38000
+16
+b100 W
+1;
+#40000
+06
+0;
+#42000
+0D
+1,
+0&
+15
+0!
+0E
+0J
+1O
+1P
+b101 V
+b100 X
+0Y
+1:
+#44000
+05
+0:
+#46000
+16
+b101 W
+1;
+#48000
+06
+0;
+#50000
+1+
+0-
+15
+1N
+1O
+0P
+b110 V
+b101 X
+1:
+#52000
+05
+0:
+#54000
+16
+b110 W
+1;
+#56000
+06
+0;
+#58000
+0+
+0,
+15
+10
+1!
+1E
+0N
+0O
+1S
+b111 V
+b110 X
+1:
+#60000
+05
+0:
+#62000
+16
+b111 W
+1;
+#64000
+06
+0;
+#66000
+1(
+15
+00
+11
+0!
+0E
+1K
+0S
+1T
+b0 V
+b111 X
+1:
+#68000
+05
+0:
+#70000
+16
+b0 W
+1;
+#72000
+06
+0;
+#74000
+1#
+1D
+0(
+1-
+15
+b101000 8
+01
+1!
+1E
+1G
+0K
+1P
+0T
+b1 V
+b0 X
+1Y
+1:
+1?
+#76000
+05
+0:
+#78000
+16
+b1 W
+1;
+#80000
+06
+0;
+#82000
+1$
+0#
+15
+1E
+0G
+1H
+1P
+b10 V
+b1 X
+1Y
+1:
+#84000
+05
+0:
+#86000
+16
+b10 W
+1;
+#88000
+06
+0;
+#90000
+1%
+0$
+15
+1E
+0H
+1I
+1P
+b11 V
+b10 X
+1Y
+1:
+#92000
+05
+0:
+#94000
+16
+b11 W
+1;
+#96000
+06
+0;
+#98000
+0%
+1&
+15
+1E
+0I
+1J
+1P
+b100 V
+b11 X
+1Y
+1:
+#100000
+05
+0:
+#102000
+16
+b100 W
+1;
+#104000
+06
+0;
+#106000
+0D
+1,
+0&
+15
+0!
+0E
+0J
+1O
+1P
+b101 V
+b100 X
+0Y
+1:
+#108000
+05
+0:
+#110000
+16
+b101 W
+1;
+#112000
+06
+0;
+#114000
+1+
+0-
+15
+1N
+1O
+0P
+b1000 V
+b101 X
+1:
+#116000
+05
+0:
+#118000
+16
+b1000 W
+1;
+#120000
+06
+0;
+#122000
+0+
+0,
+1"
+15
+10
+1F
+0N
+0O
+1S
+b0 V
+b1000 X
+1:
+#124000
+05
+0:
+#126000
+16
+b0 W
+1;
+#128000
+06
+0;
+#130000
+1#

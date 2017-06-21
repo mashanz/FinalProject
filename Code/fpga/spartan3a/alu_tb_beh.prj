@@ -1,0 +1,6 @@
+verilog work "protection.v"
+verilog work "bridge.v"
+verilog work "alu_min.v"
+verilog work "alu.v"
+verilog work "alu_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

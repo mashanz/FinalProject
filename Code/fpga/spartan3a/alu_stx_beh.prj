@@ -1,0 +1,5 @@
+verilog isim_temp "protection.v"
+verilog isim_temp "bridge.v"
+verilog isim_temp "alu_min.v"
+verilog isim_temp "alu.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

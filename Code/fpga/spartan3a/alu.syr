@@ -1,0 +1,465 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: alu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "alu.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "alu"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-tq144
+
+---- Source Options
+Top Module Name                    : alu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "protection.v" in library work
+Compiling verilog file "bridge.v" in library work
+Module <protection> compiled
+Compiling verilog file "alu_min.v" in library work
+Module <bridge> compiled
+Compiling verilog file "alu.v" in library work
+Module <alu_min> compiled
+Module <alu> compiled
+No errors in compilation
+Analysis of file <"alu.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <alu_min> in library <work>.
+
+Analyzing hierarchy for module <protection> in library <work>.
+
+Analyzing hierarchy for module <bridge> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <alu>.
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <alu_min> in library <work>.
+WARNING:Xst:883 - "alu_min.v" line 18: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 72: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 73: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 74: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 75: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 76: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 77: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 78: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu_min.v" line 79: Ignored duplicate item in case statement. 
+Module <alu_min> is correct for synthesis.
+ 
+Analyzing module <protection> in library <work>.
+WARNING:Xst:2725 - "protection.v" line 13: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "protection.v" line 14: Size mismatch between case item and case selector.
+Module <protection> is correct for synthesis.
+ 
+Analyzing module <bridge> in library <work>.
+Module <bridge> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <alu_min>.
+    Related source file is "alu_min.v".
+WARNING:Xst:647 - Input <ENA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:643 - "alu_min.v" line 102: The result of a 8x8-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 8-bit register for signal <RGZ>.
+    Found 8-bit addsub for signal <RGZ$addsub0000>.
+    Found 8x8-bit multiplier for signal <RGZ$mult0001> created at line 102.
+    Found 8-bit xor2 for signal <RGZ$xor0000> created at line 36.
+    Found 8-bit xor2 for signal <RGZ$xor0001> created at line 54.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <alu_min> synthesized.
+
+
+Synthesizing Unit <protection>.
+    Related source file is "protection.v".
+WARNING:Xst:647 - Input <ENA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RGA<7:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RGB> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <RGZ>.
+    Found 2-bit adder for signal <$add0000> created at line 16.
+    Found 3-bit adder for signal <$add0001> created at line 20.
+    Found 12-bit register for signal <tmp>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <protection> synthesized.
+
+
+Synthesizing Unit <bridge>.
+    Related source file is "bridge.v".
+Unit <bridge> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.v".
+Unit <alu> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 3
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 21
+ 1-bit register                                        : 20
+ 8-bit register                                        : 1
+# Xors                                                 : 2
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 3
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Xors                                                 : 2
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <alu> ...
+
+Optimizing unit <alu_min> ...
+
+Optimizing unit <protection> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block alu, actual ratio is 24.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : alu.ngr
+Top Level Output File Name         : alu
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 319
+#      GND                         : 1
+#      LUT2                        : 28
+#      LUT2_L                      : 1
+#      LUT3                        : 62
+#      LUT3_L                      : 1
+#      LUT4                        : 171
+#      LUT4_D                      : 1
+#      LUT4_L                      : 17
+#      MUXCY                       : 7
+#      MUXF5                       : 21
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 16
+#      FD                          : 8
+#      FDRS                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 27
+#      OBUF                        : 8
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-4 
+
+ Number of Slices:                      155  out of    704    22%  
+ Number of Slice Flip Flops:             16  out of   1408     1%  
+ Number of 4 input LUTs:                281  out of   1408    19%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  36  out of    108    33%  
+ Number of MULT18X18SIOs:                 1  out of      3    33%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.765ns (Maximum Frequency: 114.090MHz)
+   Minimum input arrival time before clock: 14.411ns
+   Maximum output required time after clock: 7.356ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 8.765ns (frequency: 114.090MHz)
+  Total number of paths / destination ports: 229 / 24
+-------------------------------------------------------------------------
+Delay:               8.765ns (Levels of Logic = 6)
+  Source:            aluj/RGZ_0 (FF)
+  Destination:       aluj/RGZ_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: aluj/RGZ_0 to aluj/RGZ_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            16   0.591   1.037  aluj/RGZ_0 (aluj/RGZ_0)
+     LUT4:I3->O            1   0.648   0.423  aluj/RGZ_mux0002<0>50 (aluj/RGZ_mux0002<0>50)
+     LUT4:I3->O            1   0.648   0.452  aluj/RGZ_mux0002<0>154 (aluj/RGZ_mux0002<0>)
+     LUT3:I2->O            1   0.648   0.000  aluj/Maddsub_RGZ_addsub0000_lut<0> (aluj/Maddsub_RGZ_addsub0000_lut<0>)
+     XORCY:LI->O           4   0.720   0.590  aluj/Maddsub_RGZ_addsub0000_xor<0> (aluj/RGZ_addsub0000<0>)
+     LUT4:I3->O            1   0.648   0.423  aluj/RGZ_mux0000<7>205_SW0 (N128)
+     LUT4:I3->O            1   0.648   0.420  aluj/RGZ_mux0000<7>205 (aluj/RGZ_mux0000<7>205)
+     FDRS:S                    0.869          aluj/RGZ_0
+    ----------------------------------------
+    Total                      8.765ns (5.420ns logic, 3.345ns route)
+                                       (61.8% logic, 38.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 6440 / 32
+-------------------------------------------------------------------------
+Offset:              14.411ns (Levels of Logic = 11)
+  Source:            OPT<1> (PAD)
+  Destination:       aluj/RGZ_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: OPT<1> to aluj/RGZ_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            43   0.849   1.409  OPT_1_IBUF (OPT_1_IBUF)
+     LUT2:I0->O            3   0.648   0.534  aluj/RGZ_mux0002<0>310 (aluj/N38)
+     LUT4:I3->O            1   0.648   0.563  aluj/RGZ_or001927 (aluj/RGZ_or001927)
+     LUT2:I0->O            1   0.648   0.452  aluj/RGZ_or001942_SW0 (N110)
+     LUT4:I2->O            8   0.648   0.760  aluj/RGZ_or001942 (aluj/RGZ_or0019)
+     LUT4:I3->O            1   0.648   0.500  aluj/RGZ_mux0001<0>_SW0_SW0 (N60)
+     LUT3:I1->O            1   0.643   0.500  aluj/RGZ_mux0001<0> (aluj/RGZ_mux0001<0>)
+     LUT3:I1->O            1   0.643   0.000  aluj/Maddsub_RGZ_addsub0000_lut<0> (aluj/Maddsub_RGZ_addsub0000_lut<0>)
+     XORCY:LI->O           4   0.720   0.590  aluj/Maddsub_RGZ_addsub0000_xor<0> (aluj/RGZ_addsub0000<0>)
+     LUT4:I3->O            1   0.648   0.423  aluj/RGZ_mux0000<7>205_SW0 (N128)
+     LUT4:I3->O            1   0.648   0.420  aluj/RGZ_mux0000<7>205 (aluj/RGZ_mux0000<7>205)
+     FDRS:S                    0.869          aluj/RGZ_0
+    ----------------------------------------
+    Total                     14.411ns (8.260ns logic, 6.151ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              7.356ns (Levels of Logic = 2)
+  Source:            aluj/RGZ_0 (FF)
+  Destination:       RGZ<0> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: aluj/RGZ_0 to RGZ<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            16   0.591   1.177  aluj/RGZ_0 (aluj/RGZ_0)
+     LUT2:I0->O            1   0.648   0.420  jembatan/Z<0>1 (RGZ_0_OBUF)
+     OBUF:I->O                 4.520          RGZ_0_OBUF (RGZ<0>)
+    ----------------------------------------
+    Total                      7.356ns (5.759ns logic, 1.597ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.09 secs
+ 
+--> 
+
+Total memory usage is 319148 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

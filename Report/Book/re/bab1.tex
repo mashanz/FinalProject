@@ -1,0 +1,111 @@
+%-----------------------------------------------------------------------------%
+\chapter{\babSatu}
+%-----------------------------------------------------------------------------%
+
+%-----------------------------------------------------------------------------%
+\section{Latar Belakang}
+%-----------------------------------------------------------------------------%
+Integrated Circuit (IC) merupakan modul teknologi dasar dari perangkat
+elektronika tertanam modern. Dengan berkembangnya teknologi IC yang
+mengutamakan ukuran kecil, dan performa yang tinggi serta dengan harga yang
+murah membuat teknologi IC semakin diminati [1].
+
+Dengan ukuran modul yang sangat kecil dan banyaknya komponen
+pembangun, kerja sama antara desainer dilakukan untuk membangun sebuah
+modul VLSI sehingga setiap desainer dapat fokus mendesain salah satu fungsi
+yang terdapat dalam modul tersebut. Kerja sama dilakukan untuk mempermudah
+pembuatan desain VLSI yang memiliki tingkat kerumitan yang tinggi. Desainer
+juga dapat mempercepat waktu mendesain dengan menggunakan kode sumber
+yang sudah ada atau bekerja sama secara paralel membuat masing-masing modul
+yang nantinya akan digabung menjadi sebuah modul utama VLSI.
+
+Setelah modul selesai dibuat maka modul siap untuk di-produksi. Dalam
+proses produksi modul perusahaan tempat desainer bekerja tidak perlu memiliki
+pabrik produksi modul sendiri, perusahaan dapat bekerja sama dengan mitra
+percetakan yang akan memproduksi modul buatan perusahaan modul tersebut.
+Cara kerja sama seperti ini disebut dengan Fabless Manufacturing [2]. Ketika
+akan memproduksi IC, perusahaan harus menyerahkan blueprint modul VLSI ke
+percetakan, namun blueprint tersebut tidak terjamin kerahasiaan nya serta
+memungkinkan plagiarisme desain oleh oknum perusahaan atau pihak ketiga yang
+tertarik menggunakan desain VLSI yang telah diserahkan untuk di-produksi.
+
+Dengan memberikan rangkaian watermark sebagai pengamanan pada
+blueprint VLSI siap cetak yang menandakan kepemilikan dari desainer atau
+perusahaan produsen modul akan melindungi dari kecurangan pihak lain yang
+akan mencuri desain. Sehingga kemungkinan pencurian atau plagiarisme yang
+menyebabkan kerugian pada perusahaan atau desainer karena desain nya dicuri
+atau di-plagiat berkurang
+
+%-----------------------------------------------------------------------------%
+\section{Rumusan Masalah}
+%-----------------------------------------------------------------------------%
+Berikut ini dijelaskan rumusan masalah yang dihadapi dalam proposal
+penelitian Intelectual Property Protection (IPP) menggunakan metode Digital
+Filter Algorithm using Logical Polymorph Gate Key Verification :
+
+\begin{enumerate}
+	\item Dengan metode Fabless Manufacturing, desain modul yang siap
+	diproduksi diserahkan kepada perusahaan percetakan mitra sehingga
+	mitra dapat mengetahui desain modul dari desainer yang
+	memungkinkan desain dapat dicuri oleh oknum percetakan atau pihak
+	ketiga yang tertarik dengan desain tersebut.
+	 
+	\item Desain modul rawan terhadap plagiarisme karena desain elektronik
+	sangat mudah ditiru, sehingga pengamanan desain harus dilakukan agar
+	desain tidak mudah untuk dicuri atau di-plagiat.
+	
+	\item Apabila pihak ketiga mencuri desain, desainer dapat mengklaim modul
+	tersebut dengan bukti dari pengamanan watermark yang telah tertanam
+	dalam IC menggunakan teknik pemanggilan watermark yang hanya
+	diketahui oleh desainer yang mendesain IC tersebut.
+\end{enumerate}
+%-----------------------------------------------------------------------------%
+\section{Tujuan}
+%-----------------------------------------------------------------------------%
+Berikut merupakan tujuan pengamanan desain modul yang siap cetak
+sehingga aman terhadap pencurian hak cipta :
+\begin{enumerate}
+	\item Merancang rangkaian pengamanan dalam sebuah chip design sebagai
+	bukti kepemilikan desain (ownership) atau watermarking.
+	
+	\item Desain chip yang telah diberi rangkaian watermark akan dianalisis
+	perubahan performa dari desain sebelum dan sesudah watermarking
+	serta kemungkinan watermark di-modifikasi oleh pihak lain atau
+	reverse engineering untuk digunakan kembali oleh pengguna yang tidak
+	sah.
+	
+	\item Rangkaian ini akan ditanam di dalam chip yang pemanggilan informasi
+	pemilik dari chip hanya diketahui oleh pemilik cipta.
+\end{enumerate}
+%-----------------------------------------------------------------------------%
+\section{Batasan Masalahan}
+%-----------------------------------------------------------------------------%
+Dalam penelitian ini rancangan desain VLSI yang disisipkan watermark
+membatasi masalah serta pembahasan yang akan diteliti sebagai berikut :
+
+\begin{enumerate}
+	\item Tidak membuat modul IC VLSI spesifik, namun menggunakan yang
+	sudah ada dan menyisipkan dengan watermark.
+	
+	\item Menyisipkan rangkaian dengan data watermark dan tidak membahas
+	detail data dari pemilik cipta.
+	
+	\item Watermarking yang dilakukan untuk satu chip IC dan tidak mewatermark
+	masing-masing modul yang ter-integrasi dalam chip IC. 
+\end{enumerate}
+%-----------------------------------------------------------------------------%
+\section{Metodologi Penyelesaian Masalah}
+%-----------------------------------------------------------------------------%
+%\todo{Tuliskan metodologi penelitian yang digunakan.}
+
+%-----------------------------------------------------------------------------%
+\section{Sistematika Penulisan}
+%-----------------------------------------------------------------------------%
+Sistematika penulisan laporan adalah sebagai berikut:
+\begin{itemize}
+	\item Bab 1 \babSatu
+	\item Bab 2 \babDua
+	\item Bab 3 \babTiga
+	\item Bab 4 \babEmpat
+	\item Bab 5 \kesimpulan
+\end{itemize}

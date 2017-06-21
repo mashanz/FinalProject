@@ -1,0 +1,498 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s50a-4-tq144
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "top.v" in library work
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+WARNING:Xst:883 - "top.v" line 126: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 127: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 128: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 129: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 130: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 131: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 132: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "top.v" line 133: Ignored duplicate item in case statement. 
+WARNING:Xst:905 - "top.v" line 20: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <z>
+Module <top> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <ta> in unit <top> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <top> has a constant value of 1000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:647 - Input <seld> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1306 - Output <done> is never assigned.
+WARNING:Xst:647 - Input <enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <tb> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ta> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "top.v" line 165: The result of a 8x8-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:737 - Found 8-bit latch for signal <z>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit adder for signal <old_z_11$addsub0000> created at line 35.
+    Found 8-bit adder for signal <old_z_13$addsub0000> created at line 35.
+    Found 8-bit adder for signal <old_z_15$add0000> created at line 62.
+    Found 8-bit adder for signal <old_z_16$addsub0000> created at line 62.
+    Found 8-bit adder for signal <old_z_17$addsub0000> created at line 62.
+    Found 8-bit adder for signal <old_z_18$addsub0000> created at line 62.
+    Found 8-bit adder for signal <old_z_19$addsub0000> created at line 62.
+    Found 8-bit adder for signal <old_z_20$addsub0000> created at line 62.
+    Found 8-bit adder for signal <old_z_21$addsub0000> created at line 62.
+    Found 8-bit adder for signal <old_z_24$addsub0000> created at line 89.
+    Found 8-bit adder for signal <old_z_26$addsub0000> created at line 89.
+    Found 8-bit adder for signal <old_z_28$addsub0000> created at line 89.
+    Found 8-bit adder for signal <old_z_3$addsub0000> created at line 35.
+    Found 8-bit adder for signal <old_z_30$addsub0000> created at line 89.
+    Found 8-bit adder for signal <old_z_32$addsub0000> created at line 89.
+    Found 8-bit adder for signal <old_z_34$addsub0000> created at line 89.
+    Found 8-bit adder for signal <old_z_38$addsub0000> created at line 116.
+    Found 8-bit adder for signal <old_z_40$addsub0000> created at line 116.
+    Found 8-bit adder for signal <old_z_42$addsub0000> created at line 116.
+    Found 8-bit adder for signal <old_z_44$addsub0000> created at line 116.
+    Found 8-bit adder for signal <old_z_46$addsub0000> created at line 116.
+    Found 8-bit adder for signal <old_z_48$addsub0000> created at line 116.
+    Found 8-bit adder for signal <old_z_5$addsub0000> created at line 35.
+    Found 8-bit adder for signal <old_z_51$addsub0000> created at line 144.
+    Found 8-bit adder for signal <old_z_52$addsub0000> created at line 144.
+    Found 8-bit adder for signal <old_z_53$addsub0000> created at line 144.
+    Found 8-bit adder for signal <old_z_54$addsub0000> created at line 144.
+    Found 8-bit adder for signal <old_z_55$addsub0000> created at line 144.
+    Found 8-bit adder for signal <old_z_56$addsub0000> created at line 144.
+    Found 8-bit adder for signal <old_z_58$addsub0000> created at line 189.
+    Found 8-bit adder for signal <old_z_59$addsub0000> created at line 189.
+    Found 8-bit adder for signal <old_z_60$addsub0000> created at line 189.
+    Found 8-bit adder for signal <old_z_61$addsub0000> created at line 189.
+    Found 8-bit adder for signal <old_z_62$addsub0000> created at line 189.
+    Found 8-bit adder for signal <old_z_63$addsub0000> created at line 189.
+    Found 8-bit adder for signal <old_z_65$addsub0000> created at line 234.
+    Found 8-bit adder for signal <old_z_66$addsub0000> created at line 234.
+    Found 8-bit adder for signal <old_z_67$addsub0000> created at line 234.
+    Found 8-bit adder for signal <old_z_68$addsub0000> created at line 234.
+    Found 8-bit adder for signal <old_z_69$addsub0000> created at line 234.
+    Found 8-bit adder for signal <old_z_7$addsub0000> created at line 35.
+    Found 8-bit adder for signal <old_z_70$addsub0000> created at line 234.
+    Found 8-bit adder for signal <old_z_72$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_73$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_74$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_75$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_76$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_77$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_78$addsub0000> created at line 260.
+    Found 8-bit adder for signal <old_z_9$addsub0000> created at line 35.
+    Found 8x8-bit multiplier for signal <z$mult0001> created at line 165.
+    Found 8-bit addsub for signal <z$share0000> created at line 21.
+    Found 8-bit xor2 for signal <z$xor0000> created at line 39.
+    Found 8-bit xor2 for signal <z$xor0001> created at line 66.
+    Found 8-bit xor2 for signal <z$xor0002> created at line 120.
+    Summary:
+	inferred  51 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 51
+ 8-bit adder                                           : 50
+ 8-bit addsub                                          : 1
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Xors                                                 : 3
+ 8-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 51
+ 8-bit adder                                           : 50
+ 8-bit addsub                                          : 1
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+# Xors                                                 : 3
+ 8-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 71.
+Latch z_2 has been replicated 1 time(s)
+Latch z_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 38
+
+Cell Usage :
+# BELS                             : 1231
+#      GND                         : 1
+#      LUT2                        : 64
+#      LUT2_D                      : 4
+#      LUT3                        : 165
+#      LUT3_D                      : 26
+#      LUT3_L                      : 10
+#      LUT4                        : 558
+#      LUT4_D                      : 14
+#      LUT4_L                      : 29
+#      MUXCY                       : 134
+#      MUXF5                       : 65
+#      VCC                         : 1
+#      XORCY                       : 160
+# FlipFlops/Latches                : 10
+#      LD                          : 10
+# IO Buffers                       : 32
+#      IBUF                        : 24
+#      OBUF                        : 8
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-4 
+
+ Number of Slices:                      472  out of    704    67%  
+ Number of Slice Flip Flops:             10  out of   1408     0%  
+ Number of 4 input LUTs:                870  out of   1408    61%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  32  out of    108    29%  
+ Number of MULT18X18SIOs:                 1  out of      3    33%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+z_or0003(z_or0003_f5:O)            | NONE(*)(z_0)           | 10    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 20.664ns (Maximum Frequency: 48.394MHz)
+   Minimum input arrival time before clock: 23.873ns
+   Maximum output required time after clock: 6.526ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'z_or0003'
+  Clock period: 20.664ns (frequency: 48.394MHz)
+  Total number of paths / destination ports: 672260 / 10
+-------------------------------------------------------------------------
+Delay:               20.664ns (Levels of Logic = 22)
+  Source:            z_0 (LATCH)
+  Destination:       z_7 (LATCH)
+  Source Clock:      z_or0003 falling
+  Destination Clock: z_or0003 falling
+
+  Data Path: z_0 to z_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              81   0.728   1.358  z_0 (z_0)
+     LUT2:I1->O            1   0.643   0.000  Madd_old_z_15_add0000_lut<0> (Madd_old_z_15_add0000_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_15_add0000_cy<0> (Madd_old_z_15_add0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_old_z_15_add0000_cy<1> (Madd_old_z_15_add0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_old_z_15_add0000_cy<2> (Madd_old_z_15_add0000_cy<2>)
+     XORCY:CI->O           5   0.844   0.636  Madd_old_z_15_add0000_xor<3> (old_z_15_add0000<3>)
+     LUT4:I3->O            1   0.648   0.000  Madd_old_z_16_addsub0000_lut<3> (Madd_old_z_16_addsub0000_lut<3>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_16_addsub0000_cy<3> (Madd_old_z_16_addsub0000_cy<3>)
+     XORCY:CI->O           2   0.844   0.450  Madd_old_z_16_addsub0000_xor<4> (old_z_16_addsub0000<4>)
+     LUT4:I3->O            1   0.648   0.000  Madd_old_z_17_addsub0000_lut<4> (Madd_old_z_17_addsub0000_lut<4>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_17_addsub0000_cy<4> (Madd_old_z_17_addsub0000_cy<4>)
+     XORCY:CI->O           2   0.844   0.450  Madd_old_z_17_addsub0000_xor<5> (old_z_17_addsub0000<5>)
+     LUT4:I3->O            1   0.648   0.000  Madd_old_z_18_addsub0000_lut<5> (Madd_old_z_18_addsub0000_lut<5>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_18_addsub0000_cy<5> (Madd_old_z_18_addsub0000_cy<5>)
+     XORCY:CI->O           6   0.844   0.672  Madd_old_z_18_addsub0000_xor<6> (old_z_18_addsub0000<6>)
+     LUT4:I3->O            1   0.648   0.000  _old_z_19<6>1_SW1_G (N169)
+     MUXF5:I1->O           1   0.276   0.500  _old_z_19<6>1_SW1 (N90)
+     LUT4:I1->O            1   0.643   0.423  Madd_old_z_20_addsub0000_cy<6>11_SW0 (N51)
+     LUT4:I3->O            5   0.648   0.636  _old_z_20<7>1_SW0 (N94)
+     LUT4:I3->O            5   0.648   0.636  _old_z_21<7> (_old_z_21<7>)
+     LUT4:I3->O            0   0.648   0.000  Maddsub_z_share0000_lut<7> (Maddsub_z_share0000_lut<7>)
+     XORCY:LI->O           1   0.720   0.423  Maddsub_z_share0000_xor<7> (z_share0000<7>)
+     LUT4:I3->O            1   0.648   0.000  z_mux0003<7>266 (z_mux0003<7>)
+     LD:D                      0.252          z_7
+    ----------------------------------------
+    Total                     20.664ns (14.480ns logic, 6.184ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'z_or0003'
+  Total number of paths / destination ports: 442786 / 10
+-------------------------------------------------------------------------
+Offset:              23.873ns (Levels of Logic = 25)
+  Source:            b<0> (PAD)
+  Destination:       z_7 (LATCH)
+  Destination Clock: z_or0003 falling
+
+  Data Path: b<0> to z_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            89   0.849   1.423  b_0_IBUF (b_0_IBUF)
+     LUT3:I0->O            1   0.648   0.000  Madd_old_z_24_addsub0000_lut<1> (Madd_old_z_24_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_24_addsub0000_cy<1> (Madd_old_z_24_addsub0000_cy<1>)
+     XORCY:CI->O           2   0.844   0.527  Madd_old_z_24_addsub0000_xor<2> (old_z_24_addsub0000<2>)
+     LUT4:I1->O            1   0.643   0.000  Madd_old_z_26_addsub0000_lut<2> (Madd_old_z_26_addsub0000_lut<2>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_26_addsub0000_cy<2> (Madd_old_z_26_addsub0000_cy<2>)
+     XORCY:CI->O           3   0.844   0.611  Madd_old_z_26_addsub0000_xor<3> (old_z_26_addsub0000<3>)
+     LUT4:I1->O            1   0.643   0.000  Madd_old_z_28_addsub0000_lut<3> (Madd_old_z_28_addsub0000_lut<3>)
+     MUXCY:S->O            1   0.632   0.000  Madd_old_z_28_addsub0000_cy<3> (Madd_old_z_28_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_old_z_28_addsub0000_cy<4> (Madd_old_z_28_addsub0000_cy<4>)
+     XORCY:CI->O           2   0.844   0.527  Madd_old_z_28_addsub0000_xor<5> (old_z_28_addsub0000<5>)
+     LUT4:I1->O            1   0.643   0.000  _old_z_28<5>12 (_old_z_28<5>11)
+     MUXF5:I0->O           2   0.276   0.527  _old_z_28<5>1_f5 (_old_z_28<5>)
+     LUT4:I1->O            2   0.643   0.450  Madd_old_z_30_addsub0000_cy<5>11 (Madd_old_z_30_addsub0000_cy<5>)
+     LUT4:I3->O            2   0.648   0.447  _old_z_30<6>1 (_old_z_30<6>)
+     MUXF5:S->O            2   0.756   0.590  _old_z_32<6>1_f5 (_old_z_32<6>)
+     LUT3:I0->O            2   0.648   0.527  _old_z_34<6>1 (_old_z_34<6>)
+     LUT2:I1->O            1   0.643   0.000  z_mux0000<6>381 (z_mux0000<6>381)
+     MUXF5:I1->O           1   0.276   0.452  z_mux0000<6>38_f5 (z_mux0000<6>38)
+     LUT3:I2->O            1   0.648   0.500  z_mux0000<6>20_SW0 (N23)
+     LUT4:I1->O            2   0.643   0.590  z_mux0000<6>76 (z_mux0000<6>76)
+     LUT4:I0->O            0   0.648   0.000  z_mux0000<6>91 (z_mux0000<6>)
+     MUXCY:DI->O           0   0.787   0.000  Maddsub_z_share0000_cy<6> (Maddsub_z_share0000_cy<6>)
+     XORCY:CI->O           1   0.844   0.423  Maddsub_z_share0000_xor<7> (z_share0000<7>)
+     LUT4:I3->O            1   0.648   0.000  z_mux0003<7>266 (z_mux0003<7>)
+     LD:D                      0.252          z_7
+    ----------------------------------------
+    Total                     23.873ns (16.279ns logic, 7.594ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'z_or0003'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              6.526ns (Levels of Logic = 1)
+  Source:            z_0 (LATCH)
+  Destination:       z<0> (PAD)
+  Source Clock:      z_or0003 falling
+
+  Data Path: z_0 to z<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              81   0.728   1.278  z_0 (z_0)
+     OBUF:I->O                 4.520          z_0_OBUF (z<0>)
+    ----------------------------------------
+    Total                      6.526ns (5.248ns logic, 1.278ns route)
+                                       (80.4% logic, 19.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.55 secs
+ 
+--> 
+
+Total memory usage is 339172 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

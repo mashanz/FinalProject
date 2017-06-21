@@ -1,0 +1,63 @@
+%-----------------------------------------------------------------------------%
+\chapter{\babDua}
+%-----------------------------------------------------------------------------%
+
+%-----------------------------------------------------------------------------%
+\section{Pekerjaan Sebelumnya dan Keterkaitan}
+%-----------------------------------------------------------------------------%
+Secara garis besar teknik Intelectual Property Protection (IPP)
+watermarking dapat diklasifikasikan menjadi 2 kelas yaitu Dynamic
+Watermarking dan Static Watermarking. Dynamic Watermarking merupakan
+watermark yang tidak dapat terdeteksi kecuali dengan menjalankan IP yang telah
+di-watermark untuk mendeteksi sinyal yang dihasilkan, seperti digital signal
+processing (DSP), atau finite state mechine (FSM) watermarking. Static
+Watermarking merupakan watermark yang mengacu pada properti dari sebuah
+desain, dan hanya bisa terdeteksi dengan cara statis yang berbeda, seperti jalur dan
+penempatan watermarking [7].
+
+Salah satu pengamanan lain adalah mengonversi fail simulasi dari fail.
+RTL source code yang memungkinkan tidak mudah untuk di-reverse-engineering
+oleh pihak ketiga, sehingga model tidak dapat dirubah dan digunakan kembali
+dengan keperluan lain oleh pihak ketiga dan pengguna yang tidak bertanggung
+jawab.[8][9]
+
+Namun cara tersebut hanya melindungi dari sisi softwere yang melindungi
+IP agar tidak di-salah-gunakan oleh pengguna pihak ketiga. Untuk pengamanan IP
+yang digunakan dalam sharing project dan reusable project dapat digunakan
+dengan pengamanan Digital Signal Processing cell yang memungkinkan integrasi
+dalam sistem.
+
+Dalam penelitian kali ini akan melakukan kombinasi dari proteksi IP
+polimorph gate dengan algoritme filter digital. Menggunakan gabungan dari dua
+teknik ini akan memberikan tambahan keamanan pada proteksi IP yang
+kemungkinan tingkat over write watermark lebih kecil. Oleh karena itu dalam
+penelitian ini mengajukan sebuah gabungan metode yang sudah ada untuk
+meningkatkan kemampuan pengamanan dalam sebuah modul VLSI yang sudah
+ada. Dengan menggabungkan polygate sebagai kunci kombinasi untuk
+mengaktifkan modul filter digital yang akan digunakan sebagai watermark.
+
+\section{Perancangan dan Implementasi Algoritme DSP untuk IPP}
+
+Melakukan analisis terhadap masalah yang dikaji kemudian akan
+dilakukan rancangan Intelectual Property Protection (IPP) dengan algoritme Filter
+Digital yang dibangun meliputi rangkaian uji. Dari desain modul VLSI yang telah
+ada akan diuji coba kan performa sebelum diberi watermark.
+
+Dengan memberikan rangkaian watermark sebagai pengamanan pada
+blueprint VLSI siap cetak yang menandakan kepemilikan dari desainer atau
+perusahaan produsen modul akan melindungi dari kecurangan pihak lain yang
+akan mencuri desain tersebut. Sehingga kemungkinan pencurian atau plagiarisme
+berkurang yang menyebabkan kerugian pada perusahaan atau desainer karena
+desain nya dicuri atau diplagiat.
+
+Desain akan dirancang dengan kombinasi Low Pass Filter, High Pass
+Filter, Band Pass Filter, dan Band Reject Filter. Kombinasi ini akan ditentukan
+dan diaktifkan oleh polygate sebagai kunci pengaktifan kombinasi Filter digital.
+Setelah Filter digital aktif maka kombinasi data akan melewati kombinasi filter
+yang diaktifkan dari kombinasi polygate. Kemudian data hasil kombinasi proses
+ini akan membentuk pola khusus yang menjadi data watermark dari desainer yang
+mencirikan identitas desainer. Setelah diberikan watermark maka modul akan
+diuji coba kan kembali performa nya. Bila terjadi penurunan performa maka akan
+dilakukan perbaikan algoritma kemudian dilakukan diuji kembali performa nya.
+Hingga didapat performa yang paling baik dari beberapa uji coba yang akan
+dilakukan.
