@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/TEST/top.xst" -ofn "C:/REPO/FinalProject/Code/fpga/TEST/top.syr" 

@@ -31,4 +31,4 @@ Finished circuit initialization process.
                  170 REG A = 00000010 REG Z = 01100011
                  180 REG A = 00000111 REG Z = 10100011
                  190 REG A = 00000011 REG Z = 11101011
-Stopped at time : 200 ns : File "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.v" Line 78
+Stopped at time : 200 ns : File "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb.v" Line 82

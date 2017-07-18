@@ -18,8 +18,7 @@ Compiling module alu
 Compiling module alu_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 Verilog Units
 Built simulation executable C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_isim_beh.exe
-Fuse Memory Usage: 31732 KB
-Fuse CPU Usage: 515 ms
+Fuse Memory Usage: 31684 KB
+Fuse CPU Usage: 483 ms
