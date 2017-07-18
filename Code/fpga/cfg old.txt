@@ -1,0 +1,51 @@
+###########################################################
+# PB SWITC - BUILT IN RESET
+###########################################################
+NET "RST"		LOC = P80	|	PULLUP;
+
+###########################################################
+# BUILT IN LED
+###########################################################
+NET "RGZ[0]"	LOC = P46;
+NET "RGZ[1]"	LOC = P47;
+NET "RGZ[2]"	LOC = P48;
+NET "RGZ[3]"	LOC = P49;
+NET "RGZ[4]"	LOC = P50;
+NET "RGZ[5]"	LOC = P51;
+NET "RGZ[6]"	LOC = P54;
+NET "RGZ[7]"	LOC = P55;
+
+###########################################################
+# HEADER P1 (CLOCK, RESET, KEY, OPT)
+###########################################################
+NET "CLK"		LOC = P31	|	CLOCK_DEDICATED_ROUTE = FALSE; //EXTERNAL CLOCK
+NET "RST"		LOC = P32;
+NET "KEY[0]" 	LOC = P28;
+NET "KEY[1]" 	LOC = P30;
+NET "OPT[0]" 	LOC = P27;
+NET "OPT[1]" 	LOC = P29;
+NET "OPT[2]"	LOC = P24;
+NET "OPT[3]"	LOC = P25;
+
+###########################################################
+# HEADER P6
+###########################################################
+NET "RGA[0]"	LOC = P19;
+NET "RGA[1]"	LOC = P21;
+NET "RGA[2]"	LOC = P18;
+NET "RGA[3]"	LOC = P20;
+NET "RGA[4]"	LOC = P15;
+NET "RGA[5]"	LOC = P16;
+NET "RGA[6]"	LOC = P12;
+NET "RGA[7]"	LOC = P13;
+###########################################################
+# HEADER P2
+###########################################################
+NET "RGB[0]"	LOC = P10;
+NET "RGB[1]"	LOC = P11;
+NET "RGB[2]"	LOC = P7;
+NET "RGB[3]"	LOC = P8;
+NET "RGB[4]"	LOC = P3;
+NET "RGB[5]"	LOC = P5;
+NET "RGB[6]"	LOC = P4;
+NET "RGB[7]"	LOC = P6;

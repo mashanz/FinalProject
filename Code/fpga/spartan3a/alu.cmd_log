@@ -64,3 +64,44 @@ map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.
 par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
 xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.ncd alu.ngd alu.pcf 
+par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
+bitgen -intstyle ise -f alu.ut alu.ncd 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.ncd alu.ngd alu.pcf 
+par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
+bitgen -intstyle ise -f alu.ut alu.ncd 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.ncd alu.ngd alu.pcf 
+par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
+bitgen -intstyle ise -f alu.ut alu.ncd 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.ncd alu.ngd alu.pcf 
+par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
+bitgen -intstyle ise -f alu.ut alu.ncd 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.ncd alu.ngd alu.pcf 
+par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
+bitgen -intstyle ise -f alu.ut alu.ncd 
+xst -intstyle ise -ifn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.xst" -ofn "C:/REPO/FinalProject/Code/fpga/spartan3a/alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constrain.ucf -p xc3s50a-tq144-4 alu.ngc alu.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_map.ncd alu.ngd alu.pcf 
+par -w -intstyle ise -ol high -t 1 alu_map.ncd alu.ncd alu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf -ucf constrain.ucf 
+bitgen -intstyle ise -f alu.ut alu.ncd 

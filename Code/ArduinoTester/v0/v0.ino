@@ -1,5 +1,6 @@
 
 void setup() {
+ pinMode(0, OUTPUT);
  pinMode(1, OUTPUT);
  pinMode(2, OUTPUT);
  pinMode(3, OUTPUT);
@@ -11,15 +12,14 @@ void setup() {
 
  pinMode(8, OUTPUT);
  pinMode(9, OUTPUT);
- pinMode(10, OUTPUT);
 }
 
 /***************************************************
  *                     CLOCK
  **************************************************/
 void CLK(int in0){
-  if(in0==1){digitalWrite(10, HIGH);}
-  else{digitalWrite(10, LOW);}
+  if(in0==1){digitalWrite(0, HIGH);}
+  else{digitalWrite(0, LOW);}
 }
 /***************************************************
  *                     RESET
@@ -64,11 +64,11 @@ void OPC(int a0, int a1){
 void alu(){
   int del = 1000;
   
-  RST(1);CLK(0);delay(del/2);CLK(1);delay(del/2);
+  CLK(0);delay(del/2);CLK(1);delay(del/2);
   OPC(0,0);
   RGA(0,0,0);
   RGB(0,0,0);
-  RST(0);CLK(0);delay(del/2);CLK(1);delay(del/2);
+  CLK(0);delay(del/2);CLK(1);delay(del/2);
 
   //OPERASI ADD 2 + 1 = 3
   OPC(1,0);
@@ -85,11 +85,11 @@ void alu(){
 void protection(){
   int del = 1000;
   
-  RST(1);CLK(0);delay(del/2);CLK(1);delay(del/2);
+  CLK(0);delay(del/2);CLK(1);delay(del/2);
   OPC(0,0);
   RGA(0,0,0);
   RGB(0,0,0);
-  RST(0);CLK(0);delay(del/2);CLK(1);delay(del/2);
+  CLK(0);delay(del/2);CLK(1);delay(del/2);
   
   RGA(1,1,1);CLK(0);delay(del/2);CLK(1);delay(del/2);
   RGA(1,0,1);CLK(0);delay(del/2);CLK(1);delay(del/2);
