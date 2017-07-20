@@ -86,19 +86,19 @@ module alu_tb;
  *******************************************************************/
 	initial
 	begin
-		OPT = 8'b00000001;
-		#5 OPT = 8'b00000000;
+		OPT = 8'b00000000;
+		//#5 OPT = 8'b00000000;
 	end
 	
 	initial
 	begin
 		KEY = 1'b1;
-		#5 KEY = 1'b1;
+		//#5 KEY = 1'b1;
 	end
 	
 	initial
 	begin
-		RGB = 1;
+		RGB = 8'bxxxxxxx0;
 	end
 /********************************************************************
  *                        MODULE IN TEST                            *

@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_isim_beh.exe -prj C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_beh.prj work.alu_tb work.glbl 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_isim_beh.exe" -prj "C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_beh.prj" "work.alu_tb" "work.glbl" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -18,7 +18,8 @@ Compiling module alu
 Compiling module alu_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 Verilog Units
 Built simulation executable C:/REPO/FinalProject/Code/fpga/spartan3a/alu_tb_isim_beh.exe
-Fuse Memory Usage: 31684 KB
-Fuse CPU Usage: 483 ms
+Fuse Memory Usage: 32508 KB
+Fuse CPU Usage: 577 ms

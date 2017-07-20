@@ -35,7 +35,7 @@ static unsigned int ng10[] = {6U, 0U};
 static unsigned int ng11[] = {2U, 0U};
 static unsigned int ng12[] = {3U, 0U};
 static unsigned int ng13[] = {4U, 0U};
-static int ng14[] = {1, 0};
+static unsigned int ng14[] = {254U, 254U};
 
 void Monitor_34_1(char *);
 void Monitor_34_1(char *);
@@ -445,68 +445,30 @@ static void Initial_87_5(char *t0)
 {
     char *t1;
     char *t2;
-    char *t3;
-    char *t4;
 
-LAB0:    t1 = (t0 + 4320U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
+LAB0:    xsi_set_current_line(88, ng2);
 
-LAB3:    goto *t2;
-
-LAB2:    xsi_set_current_line(88, ng2);
-
-LAB4:    xsi_set_current_line(89, ng2);
-    t2 = ((char*)((ng6)));
-    t3 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 8);
-    xsi_set_current_line(90, ng2);
-    t2 = (t0 + 4128);
-    xsi_process_wait(t2, 5000LL);
-    *((char **)t1) = &&LAB5;
+LAB2:    xsi_set_current_line(89, ng2);
+    t1 = ((char*)((ng7)));
+    t2 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 8);
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(90, ng2);
-    t3 = ((char*)((ng7)));
-    t4 = (t0 + 1928);
-    xsi_vlogvar_assign_value(t4, t3, 0, 0, 8);
-    goto LAB1;
-
 }
 
 static void Initial_93_6(char *t0)
 {
     char *t1;
     char *t2;
-    char *t3;
-    char *t4;
 
-LAB0:    t1 = (t0 + 4568U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
+LAB0:    xsi_set_current_line(94, ng2);
 
-LAB3:    goto *t2;
-
-LAB2:    xsi_set_current_line(94, ng2);
-
-LAB4:    xsi_set_current_line(95, ng2);
-    t2 = ((char*)((ng6)));
-    t3 = (t0 + 2408);
-    xsi_vlogvar_assign_value(t3, t2, 0, 0, 2);
-    xsi_set_current_line(96, ng2);
-    t2 = (t0 + 4376);
-    xsi_process_wait(t2, 5000LL);
-    *((char **)t1) = &&LAB5;
+LAB2:    xsi_set_current_line(95, ng2);
+    t1 = ((char*)((ng6)));
+    t2 = (t0 + 2408);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 2);
 
 LAB1:    return;
-LAB5:    xsi_set_current_line(96, ng2);
-    t3 = ((char*)((ng6)));
-    t4 = (t0 + 2408);
-    xsi_vlogvar_assign_value(t4, t3, 0, 0, 2);
-    goto LAB1;
-
 }
 
 static void Initial_99_7(char *t0)
