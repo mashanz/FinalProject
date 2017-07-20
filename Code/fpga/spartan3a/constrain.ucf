@@ -1,20 +1,27 @@
-    NET "CLK"          LOC = P80   | PULLUP | CLOCK_DEDICATED_ROUTE = FALSE;
-    NET "RST"          LOC = P79   | PULLUP;
-
-    NET "KEY[0]"        LOC = P70   | PULLUP;
-    NET "KEY[1]"        LOC = P69   | PULLUP;
-    NET "OPT[0]"        LOC = P68   | PULLUP;
-    NET "OPT[1]"        LOC = P64   | PULLUP;
-    NET "RGA[0]"        LOC = P63   | PULLUP;
-    NET "RGA[1]"        LOC = P60   | PULLUP;
-    NET "RGA[2]"        LOC = P59   | PULLUP;
-    NET "RGB[0]"        LOC = P58   | PULLUP;
-	 
-NET "RGZ[0]"	LOC = P46;
-NET "RGZ[1]"	LOC = P47;
-NET "RGZ[2]"	LOC = P48;
-NET "RGZ[3]"	LOC = P49;
-NET "RGZ[4]"	LOC = P50;
-NET "RGZ[5]"	LOC = P51;
-NET "RGZ[6]"	LOC = P54;
-NET "RGZ[7]"	LOC = P55;
+############################################################
+#                   Push Button Switches
+############################################################
+NET "CLK" LOC = P80 | PULLUP | CLOCK_DEDICATED_ROUTE = FALSE;
+NET "RST" LOC = P79 | PULLUP;
+############################################################
+#                       DP Switches
+############################################################
+NET "KEY[0]" LOC = P70 | PULLUP;
+NET "KEY[1]" LOC = P69 | PULLUP;
+NET "OPT[0]" LOC = P68 | PULLUP;
+NET "OPT[1]" LOC = P64 | PULLUP;
+NET "RGA[0]" LOC = P63 | PULLUP;
+NET "RGA[1]" LOC = P60 | PULLUP;
+NET "RGA[2]" LOC = P59 | PULLUP;
+NET "RGB[0]" LOC = P58 | PULLUP;
+############################################################
+#                           LED
+############################################################
+NET "RGZ[0]" LOC = P46;
+NET "RGZ[1]" LOC = P47;
+NET "RGZ[2]" LOC = P48;
+NET "RGZ[3]" LOC = P49;
+NET "RGZ[4]" LOC = P50;
+NET "RGZ[5]" LOC = P51;
+NET "RGZ[6]" LOC = P54;
+NET "RGZ[7]" LOC = P55;
