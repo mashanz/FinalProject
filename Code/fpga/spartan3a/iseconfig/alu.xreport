@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-07-20T22:28:41</DateModified>
+  <DateModified>2017-07-24T07:26:31</DateModified>
   <ModuleName>alu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/REPO/FinalProject/Code/fpga/spartan3a/iseconfig/alu.xreport</SavedFilePath>
